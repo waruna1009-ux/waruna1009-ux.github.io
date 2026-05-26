@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
+
 Sitemap: https://waruna1009-ux.github.io/sitemap.xml
+
+# Crawl-delay: 10

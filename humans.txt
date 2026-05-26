@@ -1,0 +1,30 @@
+/* TEAM */
+
+Chef: 烟台叮叮喵水产 (Yantai Dingdingmiao Seafood)
+Contact: waruna825@outlook.com
+WhatsApp: +86 13954508112
+Location: Yantai, Shandong, China
+
+/* SITE */
+Last update: 2026-05-26
+Language: Chinese (zh-CN), English (en)
+Standards: HTML5, CSS3, Schema.org structured data
+Hosting: GitHub Pages
+
+/* THANKS */
+Thanks to all our global seafood buyers and partners in Japan, Korea, Southeast Asia, Middle East, Europe, and the Americas.
+
+/* TECHNOLOGY */
+Built with: vanilla HTML, CSS, and JavaScript
+SEO: Schema.org structured data, Open Graph, Twitter Cards, canonical URLs, bilingual meta tags
+Static site hosted on GitHub Pages
+
+/* PRODUCTS */
+Frozen Salmon (Atlantic & Pacific)
+Frozen Squid (Illex & Todarodes)
+Frozen Cod (Pacific & Atlantic)
+Frozen Shrimp (Vannamei & Black Tiger)
+Frozen Tuna (Yellowfin & Skipjack)
+Frozen Tilapia (Oreochromis niloticus)
+Frozen Basa (Pangasius hypophthalmus)
+Frozen Surimi (Pollock-based fish paste)
