@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://waruna1009-ux.github.io/sitemap.xml
