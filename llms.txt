@@ -4,7 +4,7 @@
 
 # === Core Pages ===
 /: 首页 — 冷冻海鲜出口商，三文鱼/鱿鱼/鳕鱼/虾/鲐鱼/沙丁鱼/金枪鱼。Your Trusted China Frozen Seafood Supplier. 10+ years, HACCP.
-/products.html: 完整冷冻海鲜产品目录 — 8大品类含HS编码、规格、IQF/块冻选项
+/products.html: 完整冷冻海鲜产品目录 — 10大品类含HS编码、规格、IQF/块冻选项
 /about.html: 公司介绍 — 烟台产地优势、供应链能力、出口市场覆盖
 /contact.html: 联系与询价 — 邮箱、WhatsApp、在线表单，24小时回复
 
