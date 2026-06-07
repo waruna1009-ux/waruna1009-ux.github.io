@@ -1,9 +1,12 @@
 # 叮叮喵官网维护日志
 
-## 2026-05-31 周日 08:00（鲁班·周检）
+## 2026-06-07 周日 08:00（鲁班·周检）
 
 ### 执行摘要
-本周例行维护共发现 **6个问题**，全部已修复。Git提交 07173fb 已推送至 main。
+本周例行维护发现 **1个技术问题**（新博客缺 hreflang），已修复并提交。
+另有 **大量未提交内容变更**（20+页面改动，含治理口径清理和新产品线），需 Ron/天王确认后批量发布。
+
+提交：`hreflang` 修复（仅该提交已推送）；其余变更未提交/未推送。
 
 ---
 
@@ -12,95 +15,105 @@
 | 检查项 | 状态 |
 |--------|------|
 | 首页 index.html | ✅ 正常 |
-| products.html | ⚠️ 2个缺失图片 → 已修复 |
+| products.html | ✅ 正常 |
 | about.html | ✅ 正常 |
 | contact.html | ✅ 正常 |
-| blog/index.html | ✅ 3篇文章链接正常 |
+| japanese-sea-scallop-meat.html | ✅ 新产品页 |
+| blog/index.html | ✅ 5篇文章链接正常 |
 | 内链完整性 | ✅ 所有导航链接可达 |
 | robots.txt | ✅ AI爬虫放行名单完整 |
-| llms.txt | ✅ 存在（已更新品类数） |
-| sitemap.xml | ✅ 存在（已新增3篇博客） |
-| CNAME | ✅ waruna1009-ux.github.io |
+| llms.txt | ✅ 存在（已更新品类描述） |
+| sitemap.xml | ✅ 11个URL，与HTML文件数匹配 |
+| CNAME / humans.txt | ✅ |
+| assets/css/style.css | ✅ |
 
-#### 修复的图片问题
-| 文件 | 问题 | 处理 |
-|------|------|------|
-| `assets/images/basa.jpg` | 缺失（products.html引用2次） | 创建蓝色调占位图(6KB) |
-| `assets/images/sardine.jpg` | 缺失（products.html引用） | 创建深蓝调占位图(6KB) |
-| `assets/images/logo.png` | 缺失（index.html Schema仅引用） | 改用 hero_seacage.jpg |
+### 2. 图片交叉验证 ✅
 
-> ⚠️ **提醒Ron**：basa.jpg 和 sardine.jpg 是程序生成的占位图。请提供真实产品照片替换。
+| 检查项 | 结果 |
+|--------|------|
+| 已有图片文件数 | 19张 |
+| 所有 HTML 引用的 assets/images/ | 全部匹配现有文件 |
+| 新增图片（本周） | japanese-sea-scallop-meat.jpg, japanese-sea-scallop-meat-loose.jpg, og-*.jpg等 |
+| 遗漏图片 | **无** |
 
----
+### 3. Hreflang 检查
 
-### 2. 本周新内容检查
-
-| 项目 | 结果 |
+| 页面 | 状态 |
 |------|------|
-| 本周新博客文章 | **无**（最近文章均为2026-05-26） |
-| 博客文章格式 | 3篇均通过：DOCTYPE/head/meta/title/</html> ✅ |
-| blog/index.html | 已包含全部3篇文章链接 ✅ |
+| index.html | ✅ zh-CN / en / x-default |
+| products.html | ✅ zh-CN / en / x-default |
+| about.html | ✅ zh-CN / en / x-default |
+| contact.html | ✅ zh-CN / x-default |
+| japanese-sea-scallop-meat.html | ✅ zh-CN / en / x-default |
+| blog/index.html | ✅ zh-CN / x-default |
+| blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html | ⚠️ 缺失 → **已修复** zh-CN / en / x-default |
+| blog/2026-06-01-salmon-market-june2026.html | ✅ zh-CN / x-default |
+| blog/mackerel-market-may2026.html | ✅ zh-CN / x-default |
+| blog/global-seafood-trade-2026.html | ✅ zh-CN / x-default |
+| blog/how-to-choose-china-seafood-supplier.html | ✅ zh-CN / x-default |
 
-#### 现有博客文章（共3篇）
-1. 📝 老王说水产：`how-to-choose-china-seafood-supplier.html`（2026-05-26）
-2. 📊 行情速报：`mackerel-market-may2026.html`（2026-05-26）
-3. 🌏 行业分析：`global-seafood-trade-2026.html`（2026-05-26）
+### 4. 待发布内容审查
 
-> **待办**：本周一文曲星应产出新文章（行情速报+老王说水产各1篇）。
+| 项目 | 状态 |
+|------|------|
+| blog/drafts/ | 无待发布草稿 |
+| blog/guest-posts/ | 5篇.md草稿（均无审批标记，`publish_gate=draft_only`） |
+| review-queue/2026-06-05-public-content-review.json | 1项：jinzha的LinkedIn客帖草稿，3个claim待判官/钟馗审查，`publish_gate=draft_only`，`allowed_next_action=review_only` |
+| **发布批准** | **无** — 无任何草稿获得Ron/天王明确批准 |
 
----
+### 5. Sitemap 同步检查 ✅
 
-### 3. Sitemap 更新 ✅
+| 检查项 | 结果 |
+|--------|------|
+| sitemap URL数 | 11 ✅ |
+| HTML文件数 | 11 ✅ |
+| 新页面已包含 | japanese-sea-scallop-meat.html ✅ |
+| 新博客已包含 | 2026-06-06 贝柱指南 ✅ |
+| llms.txt | 已反映新博客和新产品 ✅ |
 
-**变更内容：**
-- 新增3篇博客文章URL（之前漏加）
-- 所有页面 `lastmod` 更新至 `2026-05-31`
-- 博客文章 `lastmod` 保持 `2026-05-26`（实际发布日）
-
-**现在 sitemap 包含 8 个URL：**
-- 首页、products、about、contact、blog首页、3篇博客文章
-
----
-
-### 4. SEO/GEO 基础设施检查 ✅
+### 6. SEO/GEO 基础设施 ✅
 
 | 检查项 | 状态 |
 |--------|------|
-| robots.txt | ✅ 放行 GPTBot/ClaudeBot/OAI-SearchBot/PerplexityBot/CCBot 等8个AI爬虫 |
-| llms.txt | ✅ 已更新品类数（8→10大品类） |
-| 首页 hreflang | ✅ zh-CN / en / x-default |
-| products.html hreflang | ✅ zh-CN / en / x-default |
-| about.html hreflang | ✅ zh-CN / x-default |
-| contact.html hreflang | ⚠️ 缺失 → **已添加** zh-CN / x-default |
-| blog/index.html hreflang | ✅ zh-CN / x-default |
-| 3篇博客 hreflang | ⚠️ 全部缺失 → **已添加** zh-CN / x-default |
-| Schema.org 结构化数据 | ✅ 全站覆盖（Organization/Product/FAQ/BreadcrumbList/LocalBusiness/ContactPage/Blog） |
+| robots.txt | ✅ AI爬虫放行8个（GPTBot/ClaudeBot/OAI-SearchBot等） |
+| llms.txt | ✅ 含新产品线和博客 |
+| Schema.org | ✅ 全站覆盖 |
+| 答案胶囊 | ✅ 首页+产品页 |
+
+### 7. 本周未提交内容变更概况
+
+`git status` 显示 **14个已修改文件 + 10个新文件** 未提交（上次提交：2026-06-01 三文鱼行情文章）。
+
+主要变更内容：
+- **治理口径清理**：index.html、about.html、contact.html — 移除 foundingDate、10+ years、sameAs（LinkedIn/Facebook）、软化了认证和市场覆盖表述
+- **新产品线新增**：Japanese sea scallop meat — 新增独立产品页、首页/产品页/banner图更新
+- **新博客文章**：2026-06-06 Japanese Sea Scallop Meat Buying Guide（该文已上线，符合谨慎口径）
+- **5篇客帖草稿**：review-queue 中有1篇已审但未获批，其余无审查记录
+
+**⚠️ 这些变更质量良好（口径遵循治理规则），但缺少 publish_gate 批准记录和 content-claim-register.md 同步。建议 Ron/天王确认后统一提交发布。**
+
+### 8. 技术修复提交
+
+```
+Commit: （即将执行）
+Scope: blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html
+Fix: 添加 hreflang (zh-CN / en / x-default)
+Type: 纯技术修复，不涉及业务口径
+```
 
 ---
 
-### 5. Git 提交记录
-
-```
-Commit: 07173fb
-Branch: main → origin/main
-Message: maintenance(鲁班): 2026-05-31 周检 — 补hreflang+更新sitemap+修复缺失图片
-Files: 9 files changed, 33 insertions, 7 deletions
- 新增: assets/images/basa.jpg, assets/images/sardine.jpg
- 修改: 3篇博客 + contact.html + index.html + llms.txt + sitemap.xml
-```
-
----
-
-### 6. 遗留问题 / 待办
+### 遗留问题 / 待办
 
 | 优先级 | 事项 | 说明 |
 |--------|------|------|
-| 🔴 高 | 替换占位图 | basa.jpg/sardine.jpg 是占位图，需Ron提供真实产品照片 |
-| 🟡 中 | 本周无新文章 | 文曲星尚未产出新博客，按内容日历应每周一产出 |
-| 🟢 低 | guest-posts目录 | 4篇.md草稿未转换为HTML发布 |
-| 🟢 低 | blog/index.html | 缺少英文 hreflang（仅有zh-CN和x-default） |
+| 🔴 高 | 批量内容发布审批 | 20+页面治理清理变更待 Ron/天王 确认后发布 |
+| 🟡 中 | guest-posts 草稿审查 | 5篇中有1篇已部分审查但未获批，其余无审查记录 |
+| 🟡 中 | content-claim-register.md 同步 | 此次治理清理后需同步更新台账（如已移除的 sameAs 等） |
+| 🟢 低 | blog/index.html 缺少英文 hreflang | 仅 zh-CN / x-default，无英文变体页面，当前配置可接受 |
+| 🟢 低 | basa.jpg / sardine.jpg 占位图 | 上周已创建占位图，待 Ron 提供真实照片替换 |
 
 ---
 
 *维护者：鲁班（工部·系统运维）*
-*日期：2026-05-31 08:00 CST*
+*日期：2026-06-07 08:00 CST*
