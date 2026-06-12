@@ -3,18 +3,21 @@
 # Format: URL path + description
 
 # === Core Pages ===
-/: 首页 — 冷冻海鲜出口商，三文鱼/鱿鱼/鳕鱼/虾/鲐鱼/沙丁鱼/金枪鱼。Your Trusted China Frozen Seafood Supplier. 10+ years, HACCP.
-/products.html: 完整冷冻海鲜产品目录 — 10大品类含HS编码、规格、IQF/块冻选项
-/about.html: 公司介绍 — 烟台产地优势、供应链能力、出口市场覆盖
-/contact.html: 联系与询价 — 邮箱、WhatsApp、在线表单，24小时回复
+/: 首页 — 中国烟台冷冻海鲜采购与出口支持，三文鱼/鱿鱼/鳕鱼/虾/鲐鱼/沙丁鱼/金枪鱼等。Frozen seafood sourcing and export support from Yantai, China.
+/products.html: 完整冷冻海鲜产品目录 — Japanese sea scallop meat 夏贻贝柱、三文鱼、鱿鱼、鳕鱼、虾等品类，含规格、包装和订单核查提示
+/japanese-sea-scallop-meat.html: Japanese sea scallop meat 夏贻贝柱产品页 — U15, U16-20, U21-25, U26-30；1kg/bag, 10kg/carton；报价前确认含水/冰衣、单证和目的港要求
+/about.html: 公司介绍 — 烟台供应链、产品匹配、单证核查和出口协同能力
+/contact.html: 联系与询价 — 邮箱、WhatsApp、在线表单；请提供产品、规格、包装、数量和目的港
 
 # === Blog ===
 /blog/: 水产行业博客 — 出口指南、价格趋势、采购建议、品质标准
+/blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html: Japanese sea scallop meat buying guide — 夏贻贝柱采购核对清单，覆盖规格、含水/冰衣、包装、单证、目的港和询价字段
 
 # === Key facts about the company ===
 # Name: Yantai Dingdingmiao Seafood (烟台叮叮喵水产)
 # Location: Yantai, Shandong, China
-# Products: Frozen Salmon, Squid, Cod, Shrimp, Mackerel, Sardine, Tuna, Tilapia, Basa, Surimi
-# Certifications: HACCP, BAP
-# Export markets: Japan, Korea, Southeast Asia, Middle East, Europe, USA
-# Contact: waruna825@outlook.com / WhatsApp +86 13954508112
+# Products: Japanese Sea Scallop Meat, Frozen Salmon, Squid, Cod, Shrimp, Mackerel, Sardine, Tuna, Tilapia, Basa, Surimi
+# Japanese Sea Scallop Meat: size options U15, U16-20, U21-25, U26-30; packing reference 1kg/bag, 10kg/carton; quote only after buyer-specific review.
+# Certifications: Confirmed per product, partner plant and order; documents may include plant certificates, health certificate, certificate of origin and shipment records where applicable.
+# Export markets: Multi-market buyer support; destination requirements are checked case by case.
+# Contact: waruan825@agentmail.to / WhatsApp +86 13954508112

@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系我们 | Contact Yantai Dingdingmiao — Frozen Seafood Inquiries | Salmon Supplier Yantai</title>
-  <meta name="description" content="联系烟台叮叮喵水产获取冷冻海鲜报价。三文鱼、鱿鱼、鳕鱼、虾、金枪鱼、罗非鱼、巴沙鱼、鱼糜。24小时内回复。WhatsApp: +86 13954508112。Contact Yantai Dingdingmiao for frozen seafood inquiries. Get a quote within 24 hours.">
+  <meta name="description" content="联系烟台叮叮喵水产获取冷冻海鲜采购与出口支持。请提供产品、规格、包装、数量和目的港，便于准备可执行回复。WhatsApp: +86 13954508112。Contact Yantai Dingdingmiao for frozen seafood sourcing inquiries.">
   <meta name="keywords" content="contact Yantai Dingdingmiao, seafood inquiry China, frozen seafood quote, salmon supplier Yantai, WhatsApp seafood supplier, 联系烟台叮叮喵, 海鲜询价, 冷冻海鲜报价">
   <link rel="canonical" href="https://waruna1009-ux.github.io/contact.html">
   <link rel="alternate" hreflang="zh-CN" href="https://waruna1009-ux.github.io/contact.html">
   <link rel="alternate" hreflang="x-default" href="https://waruna1009-ux.github.io/contact.html">
   <!-- Open Graph -->
   <meta property="og:title" content="联系我们 | Contact Yantai Dingdingmiao — Frozen Seafood Inquiries">
-  <meta property="og:description" content="Get a frozen seafood quote within 24 hours. Salmon, squid, cod, shrimp, tuna, tilapia, basa, surimi. WhatsApp: +86 13954508112.">
+  <meta property="og:description" content="Send frozen seafood sourcing requirements: product, specs, packing, quantity and destination. WhatsApp: +86 13954508112.">
   <meta property="og:image" content="https://waruna1009-ux.github.io/assets/images/og-contact.jpg">
   <meta property="og:url" content="https://waruna1009-ux.github.io/contact.html">
   <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact Yantai Dingdingmiao — Frozen Seafood Inquiries">
-  <meta name="twitter:description" content="Get a quote within 24h. Salmon, squid, cod, shrimp. WhatsApp +86 13954508112.">
+  <meta name="twitter:description" content="Send frozen seafood sourcing requirements. Salmon, squid, cod, shrimp and more. WhatsApp +86 13954508112.">
   <meta name="twitter:image" content="https://waruna1009-ux.github.io/assets/images/og-contact.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
           "telephone": "+86-13954508112",
           "contactType": "sales",
           "availableLanguage": ["Chinese", "English"],
-          "email": "waruna825@outlook.com"
+          "email": "waruan825@agentmail.to"
         },
         {
           "@type": "ContactPoint",
@@ -77,7 +77,7 @@
 
 <header class="page-header">
   <h1>联系我们 Get In Touch</h1>
-  <p>Tell us what you need — we'll respond within 24 hours. 告诉我们您的需求，24小时内回复。</p>
+  <p>Tell us product, specs, packing, quantity and destination — we will reply with practical next steps as soon as possible. 请说明产品、规格、包装、数量和目的港，我们尽快回复可执行方案。</p>
 </header>
 
 <main>
@@ -85,7 +85,14 @@
     <div class="contact-grid">
       <div class="contact-form">
         <h2 style="margin-bottom:1.5rem;color:var(--ocean-dark);">发送询价 Send an Inquiry</h2>
-        <form action="#" method="POST" onsubmit="handleSubmit(event)">
+        <!-- 静态站(GitHub Pages)无后端，用 FormSubmit 把表单转成邮件，发到被系统监控的
+             AgentMail 收件箱(waruan825@agentmail.to) → reply_intake 自动建待办+派金札。
+             无需 API key。首次提交时 FormSubmit 会向该收件箱发一封“激活确认”邮件，点一次链接即永久生效。 -->
+        <form id="inquiry-form" action="https://formsubmit.co/ajax/waruan825@agentmail.to" method="POST" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="_subject" value="🌐 官网新询价 Website Seafood Inquiry">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-group">
             <label for="name">您的姓名 Your Name *</label>
             <input type="text" id="name" name="name" required placeholder="John Smith">
@@ -124,7 +131,7 @@
           <button type="submit" class="btn-submit">发送询价 Send Inquiry →</button>
         </form>
         <div id="form-success" style="display:none; text-align:center; padding:2rem; color:#27ae60; font-weight:bold;">
-          ✅ 感谢您的询价！我们将在24小时内回复。Thank you! We'll get back to you within 24 hours.
+          ✅ 感谢您的询价！我们会尽快回复。Thank you! We'll get back to you as soon as possible.
         </div>
       </div>
 
@@ -136,7 +143,7 @@
           <div class="icon">📧</div>
           <div class="text">
             <strong>邮箱 Email</strong>
-            <a href="mailto:waruna825@outlook.com">waruna825@outlook.com</a>
+            <a href="mailto:waruan825@agentmail.to">waruan825@agentmail.to</a>
           </div>
         </div>
 
@@ -166,7 +173,7 @@
 
         <div style="margin-top:2rem; padding:1.5rem; background:var(--gray-50); border-radius:var(--radius);">
           <h3 style="color:var(--ocean-dark);margin-bottom:0.5rem;">⏱ 回复时间 Response Time</h3>
-          <p style="color:var(--gray-600);font-size:0.95rem;">We typically respond within 12-24 hours during business days (UTC+8). For urgent inquiries, WhatsApp is fastest. 工作日通常12-24小时内回复（北京时间）。紧急询价请用WhatsApp。</p>
+          <p style="color:var(--gray-600);font-size:0.95rem;">We usually reply during business days (UTC+8). Clear product specifications and destination details help us respond faster. 工作日通常回复；产品规格和目的港越清楚，回复越快。</p>
         </div>
 
         <div style="margin-top:2rem; padding:1.5rem; background:var(--gray-50); border-radius:var(--radius);">
@@ -189,7 +196,7 @@
       <p style="margin-top:0.25rem;">中国山东省烟台市 | Yantai, Shandong, China</p>
     </div>
     <div>
-      <p><a href="mailto:waruna825@outlook.com">📧 waruna825@outlook.com</a></p>
+      <p><a href="mailto:waruan825@agentmail.to">📧 waruan825@agentmail.to</a></p>
       <p>💬 WhatsApp: +86 13954508112</p>
     </div>
     <div>
@@ -201,10 +208,22 @@
 </footer>
 
 <script>
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  document.querySelector('.contact-form form').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
+  var form = document.getElementById('inquiry-form');
+  var btn = form.querySelector('.btn-submit');
+  if (btn) { btn.disabled = true; btn.textContent = '发送中 Sending...'; }
+  try {
+    var res = await fetch(form.action, {
+      method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }
+    });
+    if (!res.ok) throw new Error('send failed');
+    form.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  } catch (err) {
+    if (btn) { btn.disabled = false; btn.textContent = '发送询价 Send Inquiry →'; }
+    alert('提交失败，请直接邮件 waruan825@agentmail.to 或 WhatsApp 我们。\nSubmission failed — please email waruan825@agentmail.to or WhatsApp us directly.');
+  }
   return false;
 }
 </script>
