@@ -1,0 +1,40 @@
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-07T07:35:38.633121+08:00",
+  "counts": {
+    "git_status_lines": 27,
+    "changed_paths": 27,
+    "sitemap_urls": 11,
+    "review_entries": 1,
+    "guest_post_markdown": 6
+  },
+  "finding_count": 1,
+  "findings": [
+    {
+      "area": "publish_gate",
+      "severity": "info",
+      "findings": [
+        "changed_public_files_require_luban_publish_gate"
+      ],
+      "files": [
+        "about.html",
+        "blog/2026-06-01-salmon-market-june2026.html",
+        "blog/how-to-choose-china-seafood-supplier.html",
+        "blog/index.html",
+        "contact.html",
+        "index.html",
+        "llms.txt",
+        "products.html",
+        "robots.txt",
+        "sitemap.xml",
+        "assets/images/og-about.jpg",
+        "assets/images/og-contact.jpg",
+        "assets/images/og-home.jpg",
+        "assets/images/og-products.jpg",
+        "assets/images/og-salmon-market-june2026.jpg",
+        "blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html",
+        "japanese-sea-scallop-meat.html"
+      ]
+    }
+  ]
+}

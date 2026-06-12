@@ -20,9 +20,9 @@ For the Chinese exporters I work with daily, the focus has shifted from "how do 
 
 Here's a concrete example. Norwegian mackerel prices hit yet another record high in January 2026. For European canneries and Japanese processors that traditionally relied on North Atlantic catch, the math has stopped working.
 
-China's Pacific mackerel (Scomber japonicus) — landed in Shandong, processed in HACCP-certified plants, shipped from Qingdao — is filling the gap. FOB prices in the $1,800-2,500/MT range (300/500g, whole round, IQF) are attracting buyers who never sourced from China before.
+China's Pacific mackerel (Scomber japonicus) — landed and processed through Shandong's seafood supply chain, then shipped from Qingdao or nearby ports — is part of that conversation. FOB levels and certification requirements vary by size, plant and order terms, so buyers should confirm current quotes against fresh market data.
 
-At my company, we've seen inquiries from European buyers increase 3x compared to this time last year. They're not just price-shopping — they're discovering that Chinese processing quality, when sourced from the right plants, is fully competitive with any market.
+The buyer questions are also becoming more specific: plant eligibility, traceability, certification scope, carbon data and claim-handling procedures now matter as much as the headline FOB price.
 
 ## What buyers should look for in 2026
 
@@ -40,4 +40,4 @@ The bottom line: 2026 is not a year of crisis for seafood trade. It's a year of 
 
 ---
 
-*Wang Zhirun (Ron Hill) is a frozen seafood export specialist based in Yantai, Shandong. With 10+ years of hands-on experience in the China seafood supply chain, he helps importers and distributors source salmon, mackerel, squid, cod, shrimp, and more from HACCP/BAP-certified plants. Reach him at waruna825@outlook.com or WhatsApp +86 13954508112. Website: dingdingmeow.com*
+*Wang Zhirun (Ron Hill) is based in Yantai, Shandong. He helps importers and distributors clarify frozen seafood specifications, compare sourcing options and confirm plant documents before orders. Reach him at waruan825@agentmail.to or WhatsApp +86 13954508112. Website: dingdingmeow.com*

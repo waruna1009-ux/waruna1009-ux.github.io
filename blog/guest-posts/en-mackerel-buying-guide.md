@@ -55,4 +55,4 @@ Always confirm whether the quote includes documentation fees, THC, and fumigatio
 
 ---
 
-*This guide was written by a frozen seafood export professional with 10+ years of hands-on experience in Shandong's processing industry. Questions about sourcing mackerel from China? Reach out at waruna825@outlook.com*
+*This guide was written from practical frozen seafood sourcing experience in Shandong's processing industry. Questions about sourcing mackerel from China? Reach out at waruan825@agentmail.to*

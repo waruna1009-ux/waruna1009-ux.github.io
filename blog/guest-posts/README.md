@@ -12,6 +12,7 @@
 | 2 | Frozen Mackerel Sourcing Guide for B2B Importers | EN | LinkedIn/SeafoodSource | ✅ |
 | 3 | Shandong: The Global Frozen Seafood Processing Hub | EN | Medium/Trade mags | ✅ |
 | 4 | 2026年中国冷冻水产出货的真实思考 | ZH | 知乎/行业号 | ✅ |
+| 5 | How I Vet a New Frozen Seafood Supplier from China in 5 Minutes | EN | LinkedIn | draft_only - review queue 2026-06-05 |
 
 ---
 
@@ -39,6 +40,16 @@
 | **中国水产频道** | DA 50+ | 水产行业技术文章 | 投稿 |
 
 ---
+
+## 本月发布计划 (2026年6月)
+
+| 日期 | 平台 | 文章 | 状态 |
+|------|------|------|:--:|
+| 06-03 (周二) | LinkedIn | #5: How to Vet a Supplier in 5 Minutes | ⏸ 待判官/钟馗/Ron复核 |
+| 06-10 (周二) | Medium | #5 改写版（加行业引用） | ⏸ 待判官/钟馗/Ron复核 |
+| 06-12 (周四) | Quora | 回答3个 "China seafood supplier" 相关问题 | 📋 待执行 |
+| 06-17 (周二) | LinkedIn | #3 Shandong Hub（如未发布过）或新篇 | 📋 待定 |
+| 06-24 (周二) | 知乎 | #4 中文版 | 📋 待发布 |
 
 ## 发布节奏建议
 

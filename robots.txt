@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
+Allow: /assets/images/
+Allow: /assets/css/
 
 # AI Crawlers — explicitly allowed for GEO visibility
 User-agent: GPTBot

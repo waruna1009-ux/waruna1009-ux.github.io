@@ -1,0 +1,54 @@
+[
+  {
+    "schema_version": "public_content_review_v1",
+    "created_at": "2026-06-05T10:32:00+08:00",
+    "draft_type": "guest_post",
+    "draft_path": "/Users/ron/.hermes/agent-workspace/seafood-site/blog/guest-posts/2026-06-linkedin-vet-supplier.md",
+    "target_url_or_channel": "LinkedIn Articles",
+    "owner_agent": "jinzha",
+    "technical_owner": "luban",
+    "claims": [
+      {
+        "claim": "HACCP/BRC certificates and audit grades are used as supplier screening criteria.",
+        "level": "C3",
+        "evidence": "pending; should be phrased as buyer due-diligence advice, not Dingdingmiao certification",
+        "status": "needs_review",
+        "review_owner": "panguan"
+      },
+      {
+        "claim": "Short weight or quality claim protocol: photos within 48 hours, joint survey, replacement or price adjustment options.",
+        "level": "C2",
+        "evidence": "pending Ron-approved service/claims policy",
+        "status": "needs_review",
+        "review_owner": "zhongkui"
+      },
+      {
+        "claim": "May 2026 Pacific mackerel 300/500g whole round IQF FOB Qingdao/Yantai: USD 800-1200/MT.",
+        "level": "C4",
+        "evidence": "pending dated market/source evidence",
+        "status": "needs_review",
+        "review_owner": "panguan"
+      },
+      {
+        "claim": "Dingdingmiao helps buyers source frozen seafood from China's supply chain with specifications and documents confirmed per order.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      }
+    ],
+    "publish_gate": "draft_only",
+    "required_reviewers": ["panguan", "zhongkui", "ron"],
+    "allowed_next_action": "review_only",
+    "risk_flags": [
+      "contains_certificate_discussion",
+      "contains_claim_handling_protocol",
+      "contains_market_price_range",
+      "not_approved_for_publish"
+    ],
+    "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + draft file",
+    "proposed_write_target": "seafood-site/review-queue/2026-06-05-public-content-review.json",
+    "expiry_or_recheck_date": "2026-07-05",
+    "do_not_store_raw": true
+  }
+]

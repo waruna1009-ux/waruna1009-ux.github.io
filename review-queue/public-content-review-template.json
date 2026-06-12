@@ -1,0 +1,26 @@
+{
+  "schema_version": "public_content_review_v1",
+  "created_at": "YYYY-MM-DDTHH:mm:ss+08:00",
+  "draft_type": "website|blog|guest_post|social|newsletter",
+  "draft_path": "/absolute/path/to/draft.md",
+  "target_url_or_channel": "",
+  "owner_agent": "wenquxing|jinzha",
+  "technical_owner": "luban",
+  "claims": [
+    {
+      "claim": "",
+      "level": "C0|C1|C2|C3|C4",
+      "evidence": "path/url or pending",
+      "status": "verified|needs_review|remove_or_soften",
+      "review_owner": "panguan|zhongkui|ron"
+    }
+  ],
+  "publish_gate": "draft_only|approved_for_publish",
+  "required_reviewers": ["panguan", "zhongkui", "ron"],
+  "allowed_next_action": "review_only|revise_claims|approved_publish_candidate|stop",
+  "risk_flags": [],
+  "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md",
+  "proposed_write_target": "seafood-site/review-queue/YYYY-MM-DD-public-content-review.json",
+  "expiry_or_recheck_date": "YYYY-MM-DD",
+  "do_not_store_raw": true
+}

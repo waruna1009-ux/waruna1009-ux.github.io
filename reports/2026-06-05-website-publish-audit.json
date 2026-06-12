@@ -1,0 +1,37 @@
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-05T15:19:01.580019+08:00",
+  "counts": {
+    "git_status_lines": 22,
+    "changed_paths": 22,
+    "sitemap_urls": 9,
+    "review_entries": 1,
+    "guest_post_markdown": 6
+  },
+  "finding_count": 1,
+  "findings": [
+    {
+      "area": "publish_gate",
+      "severity": "info",
+      "findings": [
+        "changed_public_files_require_luban_publish_gate"
+      ],
+      "files": [
+        "about.html",
+        "blog/2026-06-01-salmon-market-june2026.html",
+        "blog/how-to-choose-china-seafood-supplier.html",
+        "blog/index.html",
+        "contact.html",
+        "index.html",
+        "llms.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "assets/images/og-about.jpg",
+        "assets/images/og-contact.jpg",
+        "assets/images/og-home.jpg",
+        "assets/images/og-products.jpg",
+        "assets/images/og-salmon-market-june2026.jpg"
+      ]
+    }
+  ]
+}

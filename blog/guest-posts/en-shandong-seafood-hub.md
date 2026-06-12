@@ -46,4 +46,4 @@ The buyers who win in 2026 are the ones who build direct relationships with the 
 
 ---
 
-*The author is based in Yantai, Shandong — ground zero for China's frozen seafood industry. With over a decade of hands-on experience in the supply chain, he helps international buyers navigate sourcing, quality assurance, and logistics. Contact: waruna825@outlook.com*
+*The author is based in Yantai, Shandong — ground zero for China's frozen seafood industry. With over a decade of hands-on experience in the supply chain, he helps international buyers navigate sourcing, quality assurance, and logistics. Contact: waruan825@agentmail.to*

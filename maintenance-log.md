@@ -117,3 +117,25 @@ Type: 纯技术修复，不涉及业务口径
 
 *维护者：鲁班（工部·系统运维）*
 *日期：2026-06-07 08:00 CST*
+
+---
+
+### 9. 入站咨询通道修复（纯技术修复 · Ron 本次授权发布）
+
+```
+授权：Ron 本次明确授权发布（"安排把这三件事都做一下"）
+Type: 纯技术修复，不涉及业务口径/claim（鲁班职责内可直接 commit/push）
+背景：线3(官网引流)的咨询此前进不了系统——contact 表单 action="#" 是假提交(数据丢失)，
+      且全站联系邮箱写的是个人 Outlook(waruna825@outlook.com)，系统监控的是 AgentMail
+      收件箱(waruan825@agentmail.to)，两者不一致 → 官网咨询无人/无agent接管。
+改动：
+  1) 全站(17文件)联系邮箱 waruna825@outlook.com → waruan825@agentmail.to（被监控收件箱）
+  2) contact.html 表单接通 FormSubmit(https://formsubmit.co/ajax/waruan825@agentmail.to)，
+     真提交到收件箱；JS 改为 fetch 真发送 + 失败兜底提示。
+配套(后端,非本站)：reply_intake_bridge.py 增冷启入站接管→「🌐官网新咨询」高优待办+金札会话队列。
+鲁班待办：
+  git add -A && git commit -m "fix: route website inquiries to monitored AgentMail inbox + working contact form" && git push
+  首次表单提交后，去 waruan825@agentmail.to 点 FormSubmit 激活确认邮件（一次性，永久生效）
+```
+
+*待发布者：鲁班（在 Ron 的 Mac 上执行 push；本沙箱无 git 凭证）*
