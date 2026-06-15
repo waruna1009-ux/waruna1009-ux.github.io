@@ -29,6 +29,12 @@
 | China's frozen mackerel exports exceeded 350,000 MT in 2025 | 缺来源 | 从首页移除，未来需来源后作为博客数据 |
 | LinkedIn/Facebook sameAs | 账号归属未完全核实 | 从 schema 删除，待 Ron 确认后恢复 |
 
+## 已注册的市场数据声明（2026-06-15 新增）
+
+| Claim | 等级 | 状态 | 来源 | 备注 |
+|---|---|---|---|---|
+| Vietnam scallop exports $66M 2025 (+49% YoY), $18.1M Jan-Feb 2026 (+166% YoY) via VASEP | C4 | 可用（已核实） | Baird Maritime (2026-04-10) + Undercurrent News (2026-03-25)，均引用 VASEP | 适用博客内容，标注来源，不保证持续上涨 |
+
 ## 待 Ron 补证后可升级的内容
 
 | 主题 | 需要证据 | 可升级公开口径 |

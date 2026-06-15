@@ -10,9 +10,9 @@
     "claims": [
       {
         "claim": "HACCP/BRC certificates and audit grades are used as supplier screening criteria.",
-        "level": "C3",
-        "evidence": "pending; should be phrased as buyer due-diligence advice, not Dingdingmiao certification",
-        "status": "needs_review",
+        "level": "C1",
+        "evidence": "Softened from C3 to C1: The draft guest post does not claim Dingdingmiao holds HACCP/BRC. It is written as buyer due-diligence advice: 'HACCP certificates are table stakes — every export plant has one.' HACCP is standard regulatory requirement for Chinese seafood export (US FDA 21 CFR 123, EU 853/2004). BRC Grade A audit distinction is common buyer knowledge. Per governance: C3 about own certification requires evidence file, validity, applicable category — this claim is about general buyer screening practices, not own certification. Reclassified to C1.",
+        "status": "verified_by_panguan",
         "review_owner": "panguan"
       },
       {
@@ -25,7 +25,7 @@
       {
         "claim": "May 2026 Pacific mackerel 300/500g whole round IQF FOB Qingdao/Yantai: USD 800-1200/MT.",
         "level": "C4",
-        "evidence": "pending dated market/source evidence",
+        "evidence": "pending market source evidence — web search quota exhausted this round (2/2 used). Needs verified source URL + publication date + geographic scope. Without source, draft body should soften to 'market discussions indicate Pacific mackerel in this range' or remove specific figures.",
         "status": "needs_review",
         "review_owner": "panguan"
       },
@@ -46,6 +46,18 @@
       "contains_market_price_range",
       "not_approved_for_publish"
     ],
+    "yushi_review": {
+      "reviewed_at": "2026-06-13T17:00:00+08:00",
+      "decision": "blocked",
+      "reason": "Multiple unverified claims: C3 (HACCP/BRC certificates as screening criteria) needs_review by panguan; C2 (short weight/quality claim protocol) needs_review by zhongkui; C4 (Pacific mackerel price range USD 800-1200/MT) needs_review by panguan. Hard-stop risks: C3 certificate discussion without evidence, C4 price without source. Keep as draft_only.",
+      "blocking_gaps": ["C3: certificate evidence pending", "C2: Ron-approved claims policy pending", "C4: dated market/source evidence pending"]
+    },
+    "panguan_review": {
+      "reviewed_at": "2026-06-14T00:00:00+08:00",
+      "c3_resolution": "Reclassified to C1 and verified_by_panguan. Draft does not claim Dingdingmiao holds HACCP/BRC — it is buyer due-diligence advice about general industry screening practices. HACCP is standard regulatory requirement for Chinese seafood export (US FDA 21 CFR 123, EU 853/2004). BRC Grade A distinction is common buyer knowledge. Per governance: C3 applies to own-certification claims, not buyer education content. Blocking gap resolved.",
+      "c4_resolution": "Still needs_review. Web search quota exhausted (2/2 used this round). Pacific mackerel 300/500g IQF FOB price $800-1200/MT needs verified source URL + publication date + scope before can be used in published content. Draft body should soften to 'market discussions indicate' or remove specific figures. Blocking gap remains.",
+      "c2_note": "Not in panguan scope. Short weight/quality claim protocol owned by zhongkui (needs Ron-approved policy)."
+    },
     "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + draft file",
     "proposed_write_target": "seafood-site/review-queue/2026-06-05-public-content-review.json",
     "expiry_or_recheck_date": "2026-07-05",

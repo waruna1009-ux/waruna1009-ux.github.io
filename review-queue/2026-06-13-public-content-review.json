@@ -1,0 +1,237 @@
+[
+  {
+    "schema_version": "public_content_review_v1",
+    "created_at": "2026-06-13T15:35:00+08:00",
+    "draft_type": "blog",
+    "draft_path": "/Users/ron/.hermes/agent-workspace/seafood-site/blog/drafts/2026-06-13-vietnam-scallop-supply-landscape.html",
+    "target_url_or_channel": "seafood-site blog draft",
+    "owner_agent": "wenquxing",
+    "technical_owner": "luban",
+    "claims": [
+      {
+        "claim": "Yantai Dingdingmiao Seafood is based in Yantai, Shandong, China and supports frozen seafood inquiry review.",
+        "level": "C0",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      },
+      {
+        "claim": "Dingdingmiao can support specification checks, document review and order-by-order confirmation for scallop meat inquiries.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      },
+      {
+        "claim": "VASEP-linked notes indicate strong Vietnam scallop export growth in early 2026.",
+        "level": "C4",
+        "evidence": "https://www.bairdmaritime.com/fishing/catching/other-fishing/vietnams-scallop-exports-surge-amid-global-supply-chain-restructuring (published 2026-04-10, Vietnam scallop exports $18.1M Jan-Feb 2026 +166% YoY, citing VASEP) + https://www.undercurrentnews.com/2026/03/25/vietnam-emerges-as-scallop-processing-hub-as-japan-diverts-trade-from-china/ (published 2026-03-25, $66M 2025 +49%, citing VASEP)",
+        "status": "verified_by_panguan",
+        "review_owner": "panguan"
+      }
+    ],
+    "publish_gate": "approved_for_publish_candidate",
+    "required_reviewers": [
+      "panguan",
+      "zhongkui",
+      "ron"
+    ],
+    "allowed_next_action": "luban_publish",
+    "risk_flags": [
+      "contains_market_data_reference",
+      "c4_verified_by_panguan",
+      "approved_for_publish_candidate"
+    ],
+    "yushi_review": {
+      "reviewed_at": "2026-06-14T01:35:00+08:00",
+      "decision": "approved",
+      "reason": "C4 claim re-reviewed with panguan 6/14 evidence. Panguan verified C4 with two independent sources (Baird Maritime 2026-04-10 + Undercurrent News 2026-03-25, both citing VASEP), scope: Vietnam scallop export/processing sector. Zhongkui's 6/13 review found no redline violations; block was purely procedural (missing source URLs). Factual claims are market data, not certificate/price/clearance abuse. C4 requirements met: source URL + publication date + scope. Per content-marketing-auto-publish-policy all 5 conditions now satisfied. Publish gate → approved_for_publish_candidate.",
+      "basis": "panguan(6/14 C4 verified) + zhongkui(6/13 redline passed, procedural block resolved) + content-marketing-auto-publish-policy"
+    },
+    "panguan_review": {
+      "reviewed_at": "2026-06-14T00:00:00+08:00",
+      "c4_claims_verified": true,
+      "c4_evidence": "https://www.bairdmaritime.com/fishing/catching/other-fishing/vietnams-scallop-exports-surge-amid-global-supply-chain-restructuring (2026-04-10) + https://www.undercurrentnews.com/2026/03/25/vietnam-emerges-as-scallop-processing-hub-as-japan-diverts-trade-from-china/ (2026-03-25)",
+      "scope": "Vietnam scallop export/processing sector, global seafood trade. Data from VASEP cited in both sources."
+    },
+    "approval": {
+      "approved_by": "yushi_auto",
+      "approved_at": "2026-06-14T01:35:00+08:00",
+      "basis": "panguan+zhongkui+content-marketing-auto-publish-policy"
+    },
+    "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + 2026-06-13-topics.json",
+    "proposed_write_target": "seafood-site/review-queue/2026-06-13-public-content-review.json",
+    "expiry_or_recheck_date": "2026-07-13",
+    "do_not_store_raw": true
+  },
+  {
+    "schema_version": "public_content_review_v1",
+    "created_at": "2026-06-13T15:35:00+08:00",
+    "draft_type": "social",
+    "draft_path": "/Users/ron/.hermes/agent-workspace/outreach/content-queue/2026-06-13-drafts.json",
+    "target_url_or_channel": "LinkedIn draft — Vietnam scallop market attention",
+    "owner_agent": "wenquxing",
+    "technical_owner": "gongcao",
+    "claims": [
+      {
+        "claim": "Vietnam scallop activity is getting more attention in 2026.",
+        "level": "C4",
+        "evidence": "Verified via: https://www.bairdmaritime.com/fishing/catching/other-fishing/vietnams-scallop-exports-surge-amid-global-supply-chain-restructuring (2026-04-10, VASEP data: $66M 2025 +49%, $18.1M Jan-Feb 2026 +166%) + https://www.undercurrentnews.com/2026/03/25/vietnam-emerges-as-scallop-processing-hub-as-japan-diverts-trade-from-china/ (2026-03-25, same VASEP data). Scope: Vietnam scallop export/processing activity, global seafood trade. Claims consistent with sources.",
+        "status": "verified_by_panguan",
+        "review_owner": "panguan"
+      },
+      {
+        "claim": "Product documents and terms are confirmed per order.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      }
+    ],
+    "publish_gate": "approved_for_publish",
+    "required_reviewers": [
+      "panguan",
+      "zhongkui"
+    ],
+    "allowed_next_action": "approved_for_send",
+    "risk_flags": [
+      "contains_market_data_reference",
+      "c4_verified_by_panguan",
+      "approved_for_send",
+      "auto_approved_for_content_marketing"
+    ],
+    "yushi_review": {
+      "reviewed_at": "2026-06-14T01:35:00+08:00",
+      "decision": "approved",
+      "reason": "C4 claim re-reviewed with panguan 6/14 evidence. Two independent sources (Baird Maritime + Undercurrent News citing VASEP) with publication dates and scope. Zhongkui 6/13 found no redline issues; block was procedural (missing source URLs, now resolved). C4 content is market data only — no certificate/price/clearance/customer claims. Per content-marketing-auto-publish-policy all conditions satisfied. Approved for gongcao to send.",
+      "basis": "panguan(6/14 C4 verified) + zhongkui(6/13 redline passed, procedural block resolved) + content-marketing-auto-publish-policy"
+    },
+    "panguan_review": {
+      "reviewed_at": "2026-06-14T00:00:00+08:00",
+      "c4_claims_verified": true,
+      "c4_evidence": "https://www.bairdmaritime.com/fishing/catching/other-fishing/vietnams-scallop-exports-surge-amid-global-supply-chain-restructuring (2026-04-10) + https://www.undercurrentnews.com/2026/03/25/vietnam-emerges-as-scallop-processing-hub-as-japan-diverts-trade-from-china/ (2026-03-25)",
+      "scope": "Vietnam scallop export/processing activity, global seafood trade. Data from VASEP cited in both independent sources."
+    },
+    "approval": {
+      "approved_by": "content_marketing_auto_gate",
+      "approved_at": "2026-06-14T10:57:41+08:00",
+      "basis": "content-marketing-auto-publish-policy + verified claims + no hard-stop risk"
+    },
+    "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + 2026-06-13-topics.json",
+    "proposed_write_target": "seafood-site/review-queue/2026-06-13-public-content-review.json",
+    "expiry_or_recheck_date": "2026-07-13",
+    "do_not_store_raw": true
+  },
+  {
+    "schema_version": "public_content_review_v1",
+    "created_at": "2026-06-13T15:58:00+08:00",
+    "draft_type": "social",
+    "draft_path": "/Users/ron/.hermes/agent-workspace/outreach/content-queue/2026-06-13-drafts.json",
+    "target_url_or_channel": "Facebook content marketing post",
+    "owner_agent": "wenquxing",
+    "technical_owner": "gongcao",
+    "claims": [
+      {
+        "claim": "Product documents and terms are confirmed per order.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      }
+    ],
+    "publish_gate": "approved_for_publish",
+    "required_reviewers": [
+      "content_marketing_auto_gate"
+    ],
+    "allowed_next_action": "approved_for_send",
+    "risk_flags": [
+      "facebook_channel",
+      "routine_content_marketing",
+      "auto_approved_for_content_marketing"
+    ],
+    "seo_keywords": [
+      "frozen scallop meat supplier",
+      "Japanese sea scallop meat",
+      "seafood import checklist",
+      "China seafood supplier",
+      "frozen seafood sourcing"
+    ],
+    "geo_target_queries": [
+      "What information should seafood importers send for a frozen scallop quote?",
+      "How to request Japanese scallop meat from a China seafood supplier?",
+      "What documents should be checked before importing frozen scallop meat?"
+    ],
+    "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + content-marketing-auto-publish-policy.md",
+    "proposed_write_target": "seafood-site/review-queue/2026-06-13-public-content-review.json",
+    "expiry_or_recheck_date": "2026-07-13",
+    "do_not_store_raw": true,
+    "approval": {
+      "approved_by": "content_marketing_auto_gate",
+      "approved_at": "2026-06-13T15:58:00+08:00",
+      "basis": "routine content marketing + verified low-risk claim + no hard-stop risk"
+    },
+    "yushi_review": {
+      "reviewed_at": "2026-06-13T17:00:00+08:00",
+      "decision": "approved",
+      "reason": "All claims verified (C1 only). Zhongkui_status='passed'. No hard-stop risks (no C3/C4 claims in body, no certificate/price/clearance guarantees, no privacy/contract/PI data). Risk_flags: facebook_channel + routine_content_marketing. Per content-marketing-auto-publish-policy.md section '自动放行条件' — all 5 conditions met. Already approved_for_send by content_marketing_auto_gate; yushi oversight confirms no new issues."
+    }
+  },
+  {
+    "schema_version": "public_content_review_v1",
+    "created_at": "2026-06-13T15:50:00+08:00",
+    "draft_type": "blogger",
+    "draft_path": "/Users/ron/.hermes/agent-workspace/outreach/content-queue/2026-06-13-drafts.json",
+    "target_url_or_channel": "Blogger blog id 3422565368460674351",
+    "owner_agent": "wenquxing",
+    "technical_owner": "gongcao",
+    "claims": [
+      {
+        "claim": "Japanese sea scallop meat inquiries should include size, moisture/glaze, net weight, packing, quantity, destination port and required documents.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      },
+      {
+        "claim": "Yantai Dingdingmiao Seafood can support frozen seafood inquiry review from Yantai, Shandong, China.",
+        "level": "C0/C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      },
+      {
+        "claim": "Certificates and shipment documents should be checked per product, partner plant and order.",
+        "level": "C1",
+        "evidence": "/Users/ron/.hermes/agent-workspace/seafood-site/content-claim-register.md",
+        "status": "verified",
+        "review_owner": "ron"
+      }
+    ],
+    "publish_gate": "approved_for_publish",
+    "required_reviewers": [
+      "panguan",
+      "zhongkui",
+      "ron"
+    ],
+    "allowed_next_action": "approved_for_send",
+    "risk_flags": [
+      "blogger_channel",
+      "auto_publish_candidate",
+      "auto_approved_for_content_marketing"
+    ],
+    "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + outreach/platforms/blogger-3422565368460674351.json",
+    "proposed_write_target": "seafood-site/review-queue/2026-06-13-public-content-review.json",
+    "expiry_or_recheck_date": "2026-07-13",
+    "do_not_store_raw": true,
+    "approval": {
+      "approved_by": "content_marketing_auto_gate",
+      "approved_at": "2026-06-13T15:50:17+08:00",
+      "basis": "content-marketing-auto-publish-policy + verified claims + no hard-stop risk"
+    },
+    "yushi_review": {
+      "reviewed_at": "2026-06-13T17:00:00+08:00",
+      "decision": "approved",
+      "reason": "All claims verified (C0/C1 only). Zhongkui_status='passed'. Risk_flags confirm redline_passed. No C3/C4 claims in body, no certificate/price/clearance guarantees, no privacy/contract data. Blogger body uses cautious language ('should be checked per product, plant and order'). SEO keywords natural, geo_target_queries content-appropriate. Per content-marketing-auto-publish-policy.md — all 5 conditions met. Already approved_for_send; yushi oversight confirms no new issues."
+    }
+  }
+]

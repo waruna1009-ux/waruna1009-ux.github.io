@@ -1,0 +1,27 @@
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-15T08:19:03.089808+08:00",
+  "counts": {
+    "git_status_lines": 12,
+    "changed_paths": 12,
+    "sitemap_urls": 12,
+    "review_entries": 5,
+    "guest_post_markdown": 6
+  },
+  "finding_count": 1,
+  "findings": [
+    {
+      "area": "publish_gate",
+      "severity": "info",
+      "findings": [
+        "changed_public_files_require_luban_publish_gate"
+      ],
+      "files": [
+        "blog/index.html",
+        "llms.txt",
+        "sitemap.xml",
+        "blog/2026-06-13-vietnam-scallop-supply-landscape.html"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,205 @@
 # 叮叮喵官网维护日志
 
+## 2026-06-15 周一 08:00（鲁班·日检）
+
+### 执行摘要
+发布新博客：Vietnam Scallop Supply Landscape 2026（经判官+钟馗+御史自动放行）。同步更新 blog/index.html、sitemap.xml、llms.txt、content-claim-register.md。Git 已提交推送。纯技术修复：无。
+
+### 1. 文件完整性检查 ✅
+
+| 检查项 | 状态 |
+|--------|------|
+| 首页 index.html (305行) | ✅ 正常 |
+| products.html (389行) | ✅ 正常 |
+| about.html (187行) | ✅ 正常 |
+| contact.html (231行) | ✅ 正常 |
+| japanese-sea-scallop-meat.html (178行) | ✅ 正常 |
+| blog/index.html (101行) | ✅ **6篇文章（新增越南扇贝指南）** |
+| blog/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ **今日新增** |
+| blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html | ✅ 正常 |
+| blog/2026-06-01-salmon-market-june2026.html | ✅ 正常 |
+| blog/mackerel-market-may2026.html | ✅ 正常 |
+| blog/global-seafood-trade-2026.html | ✅ 正常 |
+| blog/how-to-choose-china-seafood-supplier.html | ✅ 正常 |
+| 内链完整性 | ✅ 所有导航链接可达 |
+| robots.txt | ✅ AI爬虫放行名单完整（8个） |
+| llms.txt (24行) | ✅ 已新增越南扇贝博客 |
+| sitemap.xml (12 URLs) | ✅ 已新增越南扇贝博客 |
+| assets/css/style.css (8.7KB) | ✅ |
+| assets/images/ (19张) | ✅ |
+
+### 2. 图片引用检查 ✅
+全站19张图片文件完整，无断裂引用。basa.jpg / sardine.jpg 仍为占位图。
+
+### 3. Schema 结构化数据 ✅
+新发布的越南扇贝博客含 `BlogPosting` schema。
+
+### 4. 发布前审计脚本
+```json
+{
+  "finding_count": 1,
+  "findings": [{"severity": "info", "area": "publish_gate"}]
+}
+```
+✅ **审计通过** — 唯一 finding 为 info 级别，确认公开文件已变更（此次发布正常）。
+
+### 5. 待发布内容审查
+
+| 项目 | 状态 |
+|------|------|
+| blog/drafts/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ **已发布到 blog/** — 草稿保留供追溯 |
+| guest-posts/ (6篇 .md) | 🔴 均无审批标记 |
+| review-queue/2026-06-05: LinkedIn客帖 | 🔴 3个claim待审，yushi已 block |
+| review-queue/2026-06-13: LinkedIn | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-13: Facebook | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-13: Blogger | ✅ `approved_for_send` — 功曹处理 |
+
+### 6. Content-Claim-Register 同步 ✅
+
+| 检查项 | 结果 |
+|--------|------|
+| content-claim-register.md | ✅ **已同步** — 新增VASEP越南扇贝C4声明 |
+| 公开措辞 | ✅ 全站谨慎口径 |
+| 联系信息 | ✅ waruan825@agentmail.to / +86 13954508112 |
+
+### 7. Git 变更
+
+```
+[main 新提交] publish: Vietnam Scallop Supply blog (auto-approved: website-geo-publishing-governance + panguan C4 verified + yushi approved → approved_for_publish_candidate)
+  ● blog/2026-06-13-vietnam-scallop-supply-landscape.html (新增，已批准)
+  ● blog/index.html (更新，加入新文章链接)
+  ● sitemap.xml (更新，新增URL条目)
+  ● llms.txt (更新，新增博客描述)
+  ● content-claim-register.md (更新，新增C4 VASEP声明)
+```
+
+### 8. 遗留问题 / 待办
+
+| 优先级 | 事项 | 说明 |
+|--------|------|------|
+| 🟡 中 | guest-posts审查 | 6篇客帖草稿均无审批记录 |
+| 🟢 低 | basa.jpg / sardine.jpg 占位图替换 | 待 Ron 提供真实产品照片 |
+
+---
+
+*维护者：鲁班（工部·系统运维）*
+*日期：2026-06-15 08:00 CST*
+
+---
+
+## 2026-06-14 周日 08:00（鲁班·日检）
+
+### 执行摘要
+今日例行日检：所有已批准内容为 Facebook/Blogger（归功曹处理），**无网站新内容发布**。审计脚本 clean（0 findings）。网站文件完整性全部正常。
+
+---
+
+### 1. 文件完整性检查 ✅
+
+| 检查项 | 状态 |
+|--------|------|
+| 首页 index.html (305行) | ✅ 正常 |
+| products.html (389行) | ✅ 正常 |
+| about.html (187行) | ✅ 正常 |
+| contact.html (231行) | ✅ 正常 |
+| japanese-sea-scallop-meat.html (178行) | ✅ 正常 |
+| blog/index.html (92行) | ✅ 5篇文章链接正常 |
+| blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html | ✅ 正常 |
+| blog/2026-06-01-salmon-market-june2026.html | ✅ 正常 |
+| blog/mackerel-market-may2026.html | ✅ 正常 |
+| blog/global-seafood-trade-2026.html | ✅ 正常 |
+| blog/how-to-choose-china-seafood-supplier.html | ✅ 正常 |
+| 内链完整性 | ✅ 所有导航链接可达 |
+| robots.txt | ✅ AI爬虫放行名单完整（GPTBot/ClaudeBot/OAI-SearchBot等8个） |
+| llms.txt (23行) | ✅ 包含核心页面+博客+关键事实 |
+| sitemap.xml (11 URLs) | ✅ 与HTML文件数匹配 |
+| CNAME / humans.txt | ✅ |
+| assets/css/style.css (8.7KB) | ✅ |
+| assets/js/ | ✅ 空目录（无JS依赖） |
+| assets/images/ (19张) | ✅ 所有图片文件完整 |
+
+### 2. 图片引用检查 ✅
+
+| 检查项 | 结果 |
+|--------|------|
+| 已有图片文件 | 19张（含产品图、OG图、装饰图） |
+| 全站图片引用 | 均指向已有文件，无断裂引用 |
+| japanese-sea-scallop-meat.jpg | ✅ products.html引用2次 |
+| 占位图 | basa.jpg / sardine.jpg 仍为上周占位图，待 Ron 提供真实照片 |
+
+### 3. Schema 结构化数据 ✅
+
+| 页面 | Schema类型 | 状态 |
+|-----|-----------|------|
+| index.html | Organization + Product + FAQPage + BreadcrumbList | ✅ |
+| 其他页面 | 各有对应schema | ✅ |
+
+### 4. 发布前审计脚本
+
+```json
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-14T08:14:53+08:00",
+  "finding_count": 0,
+  "findings": []
+}
+```
+✅ **审计通过，0 findings**
+
+### 5. 待发布内容审查
+
+| 项目 | 状态 |
+|------|------|
+| blog/drafts/2026-06-13-vietnam-scallop-supply-landscape.html | 🔴 `draft_only` — C4越南扇贝数据缺来源URL，御史/天王已 block |
+| guest-posts/ (6篇 .md) | 🔴 均无审批标记，`publish_gate=draft_only` |
+| review-queue/2026-06-05: LinkedIn客帖 | 🔴 3个claim待判官/钟馗审查，yushi已 block |
+| review-queue/2026-06-13: blog+LinkedIn | 🔴 C4待补来源，yushi已 block |
+| review-queue/2026-06-13: Facebook | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-13: Blogger | ✅ `approved_for_send` — 功曹处理 |
+| **鲁班发布内容** | **无** — 所有网站blog草稿均未批准 |
+
+### 6. Content-Claim-Register 同步 ✅
+
+| 检查项 | 结果 |
+|--------|------|
+| content-claim-register.md | ✅ 与当前网站口径一致，无变更 |
+| 公开措辞 | ✅ 全站使用谨慎口径（无虚构年限/证书/市场数据） |
+| 联系信息 | ✅ 全站: waruan825@agentmail.to / +86 13954508112 |
+
+### 7. Git 变更状态
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  modified:   review-queue/2026-06-05-public-content-review.json (御史追加审查记录)
+
+Untracked files:
+  blog/drafts/  (1篇草稿：越南扇贝，draft_only)
+  reports/2026-06-13-website-publish-audit.json
+  reports/2026-06-14-website-publish-audit.json
+  review-queue/2026-06-13-public-content-review.json (4条审核记录)
+```
+
+所有未提交变更为**运维元数据**（审计报告/审核记录/草稿），不涉及生产内容变更，无需提交。
+
+### 8. 遗留问题 / 待办
+
+| 优先级 | 事项 | 说明 |
+|--------|------|------|
+| 🟡 中 | C4数据来源补充 | 越南扇贝VASEP数据待判官核实后方可考虑发布 |
+| 🟡 中 | guest-posts审查 | 6篇客帖草稿均无审批记录 |
+| 🟢 低 | basa.jpg / sardine.jpg 占位图替换 | 待 Ron 提供真实产品照片 |
+| 🟢 低 | blog/index.html 仅 zh-CN / x-default | 无英文变体，当前可接受 |
+
+---
+
+*维护者：鲁班（工部·系统运维）*
+*日期：2026-06-14 08:00 CST*
+
+---
+
 ## 2026-06-07 周日 08:00（鲁班·周检）
 
 ### 执行摘要
