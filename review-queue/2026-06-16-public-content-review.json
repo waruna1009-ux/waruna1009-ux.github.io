@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "date": "2026-06-16",
+    "agent": "wenquxing",
+    "pipeline": "P3 内容 SEO/GEO 自动发布流水线",
+    "topic_id": "topic-009",
+    "title": "Frozen Salmon Sourcing FAQ: 6 Key Fields Every Importer Should Clarify Before Requesting a Quote",
+    "primary_language": "en",
+    "channels": [
+      "website_blog",
+      "blogger",
+      "facebook"
+    ],
+    "total_claims": 4,
+    "total_drafts": 3
+  },
+  "claims": [
+    {
+      "claim": "Salmon product category listed as available sourcing range",
+      "level": "C0",
+      "evidence": "products.html#salmon + content-claim-register.md",
+      "status": "verified",
+      "review_owner": "panguan"
+    },
+    {
+      "claim": "Species differences (Atlantic vs. Pacific), product forms, packing options explained as general industry knowledge",
+      "level": "C1",
+      "evidence": "General seafood industry knowledge. Atlantic salmon (Salmo salar) vs Pacific species (Chinook, Coho, Sockeye, Pink, Chum) — well-documented trade distinction. Product forms (WR, H&G, fillet, portion, trim, belly, skin) and packing (IQF, block, vacuum) are standard B2B frozen seafood terminology. No company-specific claims made — pure buyer education content.",
+      "status": "verified_by_panguan",
+      "review_owner": "panguan",
+      "panguan_review": {
+        "reviewed_at": "2026-06-16T10:34:08+08:00",
+        "c1_resolution": "needs_review → verified_by_panguan. General industry knowledge about salmon species differences, product forms, and packing options. Pure buyer education content — no company-specific claims. C1 per governance: '常规服务能力 — 规格沟通' category. Verified without web search (common trade knowledge)."
+      }
+    },
+    {
+      "claim": "Dingdingmiao supports salmon specification matching and inquiry coordination",
+      "level": "C1",
+      "evidence": "content-claim-register.md — C0/C1 product category approved",
+      "status": "verified",
+      "review_owner": "panguan"
+    },
+    {
+      "claim": "Documents confirmed per product, plant and order (not absolute guarantee)",
+      "level": "C1",
+      "evidence": "website-geo-publishing-governance.md — softened claim rule applied",
+      "status": "verified",
+      "review_owner": "panguan"
+    }
+  ],
+  "risk_checklist": {
+    "no_price_guarantees": "✅ — no price, MOQ, or 'lowest price' claims",
+    "no_certification_claims": "✅ — no HACCP/FDA/EU/Halal/MSC/BAP claims",
+    "no_years_in_business": "✅ — no 'X years' or founding date claims",
+    "no_customer_case_studies": "✅ — no customer names or case studies",
+    "no_delivery_timeline_guarantees": "✅ — no delivery or clearance guarantees",
+    "no_market_data_without_source": "✅ — no market data or statistics cited",
+    "no_comparative_statements": "✅ — no 'we are better than other suppliers'",
+    "response_time_not_guaranteed": "✅ — no '24 hour response' claims",
+    "destination_docs_confirmed_per_order": "✅ — 'confirmed per product, plant and order' phrasing used",
+    "canonical_source_noted": "✅ — products.html + industry knowledge noted"
+  },
+  "review_gate": "passed",
+  "publish_gate": "approved_for_publish_candidate",
+  "zhongkui_status": "passed",
+  "zhongkui_reviewed_at": "2026-06-16T11:05:00+08:00",
+  "zhongkui_note": "✅ Website blog 全文202行(3572字符)逐句扫描：4 claims C0/C1 only，无C3/C4强claim。无证书/年限/客户案例/价格保证/交期保证/清关保证。措辞使用 softened 语言('confirmed per product, plant and order') + 免责声明尾注。0 硬红线违规。zhongkui_status=passed, redline_passed。",
+  "risk_flags": ["redline_passed"],
+  "recommendation": "All C0/C1 claims. No C3/C4 strong claims. No red-line violations. Recommend pass after 判官 fact review and 钟馗 compliance check. Auto-gate can release for publish dispatch once both pass.",
+  "escalation_needed": false,
+  "escalation_reason": null,
+  "yushi_review": {
+    "reviewed_at": "2026-06-16T11:05:00+08:00",
+    "reviewer": "御史 (deepseek-v4-pro)",
+    "total_drafts": 3,
+    "approved": 3,
+    "retained": 0,
+    "approved_items": [
+      {
+        "draft_type": "facebook",
+        "title": "Frozen Salmon Sourcing: 6 Fields to Clarify Before You Ask for a Quote",
+        "basis": "Already approved_for_send by content_marketing_auto_gate at 2026-06-16T09:39. All claims verified (C1 only). No hard-stop risks. Confirmed — no further action needed."
+      },
+      {
+        "draft_type": "blogger",
+        "title": "Frozen Salmon Sourcing FAQ: 6 Key Fields Every Importer Should Clarify Before Requesting a Quote",
+        "basis": "Already approved_for_send by content_marketing_auto_gate at 2026-06-16T10:35:05. All claims verified/verified_by_panguan. No hard-stop risks. Confirmed."
+      },
+      {
+        "draft_type": "website_blog",
+        "title": "Frozen Salmon Sourcing FAQ: 6 Key Fields Every Importer Should Clarify Before Requesting a Quote",
+        "basis": "判官(all claims verified/verified_by_panguan by 2026-06-16T10:34) + 钟馗(passed 2026-06-16T11:05, redline_passed, 全文C0/C1 only, 0硬红线) + content-marketing-auto-publish-policy §自动放行条件全部满足 → publish_gate 改为 approved_for_publish_candidate"
+      }
+    ],
+    "basis": "content-marketing-auto-publish-policy.md §自动放行条件: 判官事实复核通过 + 钟馗红线复核通过 + C0/C1 claims only + 无 hard-stop risk → 全部3篇放行。website_blog 改为 approved_for_publish_candidate，鲁班可发布。"
+  },
+  "generated_files": [
+    {
+      "channel": "website_blog",
+      "path": "/Users/ron/.hermes/agent-workspace/seafood-site/blog/drafts/2026-06-16-topic-009-salmon-sourcing-faq.md",
+      "status": "draft_not_sent"
+    },
+    {
+      "channel": "blogger",
+      "path": "/Users/ron/.hermes/agent-workspace/outreach/content-queue/2026-06-16-drafts.json",
+      "entry": "drafts[0]",
+      "status": "draft_not_sent"
+    },
+    {
+      "channel": "facebook",
+      "path": "/Users/ron/.hermes/agent-workspace/outreach/content-queue/2026-06-16-drafts.json",
+      "entry": "drafts[1]",
+      "status": "draft_not_sent"
+    }
+  ],
+  "panguan_review": {
+    "reviewed_at": "2026-06-16T10:34:08+08:00",
+    "claims_verified": 1,
+    "resolution": "Claim #2 (C1 salmon knowledge): needs_review → verified_by_panguan. General industry knowledge, no web search needed. Blocking gap #1 resolved. Remaining: need zhongkui redline scan."
+  }
+}

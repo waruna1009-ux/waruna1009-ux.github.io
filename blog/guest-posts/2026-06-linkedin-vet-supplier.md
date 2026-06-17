@@ -65,6 +65,10 @@ If you're sourcing mackerel, salmon, squid, or any frozen seafood from China and
 *Wang Zhirun (Ron Hill) is based in Yantai, Shandong. Dingdingmiao Seafood helps buyers source frozen Pacific mackerel, salmon, squid, cod, shrimp and other seafood from China's supply chain, with specifications and documents confirmed per order.*
 
 
+
+
+<!-- Panguan review 2026-06-16: Round 3 — C4 mackerel price claim ($800-1,200/MT 300/500g WR IQF FOB) still needs_review after 6 web searches across 3 rounds. No independent source confirmed. Draft body line 51 needs softening. → Keep needs_review, recommend softening. -->
+
 ## 发布信息
 
 | 项目 | 内容 |

@@ -1,0 +1,30 @@
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-17T08:50:35.577849+08:00",
+  "counts": {
+    "git_status_lines": 8,
+    "changed_paths": 8,
+    "sitemap_urls": 12,
+    "review_entries": 7,
+    "guest_post_markdown": 6
+  },
+  "finding_count": 2,
+  "findings": [
+    {
+      "area": "review_queue",
+      "file": "2026-06-15-public-content-review.json",
+      "findings": [
+        "schema_mismatch",
+        "do_not_store_raw_not_true"
+      ]
+    },
+    {
+      "area": "review_queue",
+      "file": "2026-06-16-public-content-review.json",
+      "findings": [
+        "schema_mismatch",
+        "do_not_store_raw_not_true"
+      ]
+    }
+  ]
+}

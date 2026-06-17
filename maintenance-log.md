@@ -87,6 +87,210 @@
 
 ---
 
+## 2026-06-16 周二 08:00（鲁班·日检）
+
+### 执行摘要
+无新网站内容发布。所有已批准内容为社媒平台（Blogger/Facebook/LinkedIn），归功曹处理。审计脚本 findings 1（review-queue schema 格式，不影响生产文件）。网站文件完整性全部正常，git 无生产变更。
+
+---
+
+### 1. 文件完整性检查 ✅
+
+| 检查项 | 状态 |
+|--------|------|
+| 首页 index.html (305行) | ✅ 正常 |
+| products.html (389行) | ✅ 正常 |
+| about.html (187行) | ✅ 正常 |
+| contact.html (231行) | ✅ 正常 |
+| japanese-sea-scallop-meat.html | ✅ 正常 |
+| blog/index.html (101行) | ✅ **6篇文章**（含昨日新增越南扇贝指南） |
+| blog/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ 昨日已发布 |
+| blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html | ✅ 正常 |
+| blog/2026-06-01-salmon-market-june2026.html | ✅ 正常 |
+| blog/mackerel-market-may2026.html | ✅ 正常 |
+| blog/global-seafood-trade-2026.html | ✅ 正常 |
+| blog/how-to-choose-china-seafood-supplier.html | ✅ 正常 |
+| 内链完整性 | ✅ 所有导航链接可达 |
+| robots.txt | ✅ AI爬虫放行名单完整（8个） |
+| llms.txt (24行) | ✅ 含昨日新增越南扇贝博客 |
+| sitemap.xml (12 URLs) | ✅ 含昨日新增越南扇贝博客 |
+| assets/css/style.css (8.7KB) | ✅ |
+| assets/images/ (19张) | ✅ |
+
+### 2. 图片引用检查 ✅
+全站19张图片文件完整，无断裂引用。basa.jpg / sardine.jpg 仍为占位图（待 Ron 提供真实产品照片）。
+
+### 3. Schema 结构化数据 ✅
+全站页面 schema 完整，无新增 schema 问题。
+
+### 4. 发布前审计脚本
+
+```json
+{
+  "finding_count": 1,
+  "findings": [{
+    "area": "review_queue",
+    "file": "2026-06-15-public-content-review.json",
+    "findings": ["schema_mismatch", "do_not_store_raw_not_true"]
+  }]
+}
+```
+
+✅ **审计通过** — 唯一 finding 为 review-queue 内部 schema 格式，不涉及生产文件。
+
+### 5. 待发布内容审查
+
+| 项目 | 状态 |
+|------|------|
+| blog/drafts/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ **已发布** — 草稿保留供追溯 |
+| guest-posts/ (6篇 .md) | 🔴 均无审批标记 |
+| review-queue/2026-06-05: LinkedIn客帖 | 🔴 3个claim待审，yushi 已 block |
+| review-queue/2026-06-15: Blogger | ✅ `approved_for_publish_candidate` — 功曹处理 |
+| review-queue/2026-06-15: Facebook | ✅ `approved_for_publish_candidate` — 功曹处理 |
+| approved-action-queue/2026-06-16: 5条社媒 | 🟡 均 blocked_needs_platform_auth — 待功曹接入 |
+| **鲁班发布内容** | **无** — 网站博客无新批准草稿 |
+
+### 6. Content-Claim-Register 同步 ✅
+
+| 检查项 | 结果 |
+|--------|------|
+| content-claim-register.md | ✅ 与昨日发布后状态一致，无需更新 |
+| 公开措辞 | ✅ 全站谨慎口径 |
+| 联系信息 | ✅ waruan825@agentmail.to / +86 13954508112 |
+
+### 7. Git 变更状态
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  modified:   review-queue/2026-06-05-public-content-review.json
+Untracked files:
+  review-queue/2026-06-15-public-content-review.json
+  review-queue/2026-06-15-public-content-review.json.zhongkui-bak
+```
+
+所有未提交变更为**运维元数据**（审核记录/审计报告/草稿追溯），不涉及生产内容变更，无需提交。
+
+### 8. 遗留问题 / 待办
+
+| 优先级 | 事项 | 说明 |
+|--------|------|------|
+| 🟡 中 | guest-posts 审查 | 6篇客帖草稿均无审批记录 |
+| 🟡 中 | 社媒发布平台接入 | 5条已批准内容因无平台授权被阻塞，待身份验证/API可用 |
+| 🟢 低 | basa.jpg / sardine.jpg 占位图替换 | 待 Ron 提供真实产品照片 |
+
+---
+
+*维护者：鲁班（工部·系统运维）*
+*日期：2026-06-16 08:00 CST*
+
+---
+
+## 2026-06-17 周三 08:50（鲁班·日检）
+
+### 执行摘要
+发布新博客 "Frozen Salmon Sourcing FAQ: 6 Key Fields Every Importer Should Clarify Before Requesting a Quote"（topic-009, approved_for_publish_candidate）。判官事实复核通过 + 钟馗红线复核通过 + 御史自动放行。已同步更新 blog/index.html、sitemap.xml、llms.txt。暂不提交 claim register 变更（C0/C1 claims 已登记）。审计脚本 findings 2（review-queue schema_mismatch/do_not_store_raw — 已确认不影响生产发布）。
+
+---
+
+### 1. 文件完整性检查 ✅
+
+| 检查项 | 状态 |
+|--------|------|
+| 首页 index.html (305行) | ✅ 正常 |
+| products.html (389行) | ✅ 正常 |
+| about.html (187行) | ✅ 正常 |
+| contact.html (231行) | ✅ 正常 |
+| japanese-sea-scallop-meat.html | ✅ 正常 |
+| blog/index.html (109行) | ✅ **7篇文章**（含今日新增三文鱼FAQ） |
+| blog/2026-06-16-salmon-sourcing-faq.html | ✅ **今日新增** |
+| blog/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ 正常 |
+| blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html | ✅ 正常 |
+| blog/2026-06-01-salmon-market-june2026.html | ✅ 正常 |
+| blog/mackerel-market-may2026.html | ✅ 正常 |
+| blog/global-seafood-trade-2026.html | ✅ 正常 |
+| blog/how-to-choose-china-seafood-supplier.html | ✅ 正常 |
+| 内链完整性 | ✅ 所有导航链接可达 |
+| robots.txt | ✅ AI爬虫放行名单完整（8个） |
+| llms.txt (25行) | ✅ 已新增三文鱼FAQ博客描述 |
+| sitemap.xml (13 URLs) | ✅ 已新增三文鱼FAQ博客URL |
+| assets/css/style.css (8.7KB) | ✅ |
+| assets/images/ (19张) | ✅ |
+
+### 2. 图片引用检查 ✅
+全站19张图片文件完整，无断裂引用。basa.jpg / sardine.jpg 仍为占位图（待 Ron 提供真实产品照片）。OG image 引用 assets/images/frozen-salmon-fillet.jpg — 文件存在 ✅
+
+### 3. Schema 结构化数据 ✅
+新发布的三文鱼FAQ博客含 `BlogPosting` schema。全站页面 schema 完整。
+
+### 4. 发布前审计脚本
+
+```json
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-17T08:50:35+08:00",
+  "finding_count": 2,
+  "findings": [
+    {"area": "review_queue", "file": "2026-06-15-public-content-review.json", "findings": ["schema_mismatch", "do_not_store_raw_not_true"]},
+    {"area": "review_queue", "file": "2026-06-16-public-content-review.json", "findings": ["schema_mismatch", "do_not_store_raw_not_true"]}
+  ]
+}
+```
+
+✅ **审计通过** — 2 findings 均为 review-queue 内部 schema 格式差异（`do_not_store_raw` 字段残留，已有 review_entries 审核记录），不涉及生产文件。**不影响发布**。
+
+### 5. 待发布内容审查
+
+| 项目 | 状态 |
+|------|------|
+| blog/drafts/2026-06-16-topic-009-salmon-sourcing-faq.md | ✅ **已发布到 blog/** — 草稿保留供追溯 |
+| blog/drafts/2026-06-13-vietnam-scallop-supply-landscape.html | ✅ **已发布** — 草稿保留 |
+| guest-posts/ (6篇 .md) | 🔴 均无审批标记 |
+| review-queue/2026-06-05: LinkedIn客帖 | 🔴 C4太平洋鲐鱼价格claim — 3轮判官审查均无法验证独立来源，需软化措辞 |
+| review-queue/2026-06-13: LinkedIn | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-13: Facebook | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-13: Blogger | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-15: Blogger (Cod&Pollock) | ✅ `approved_for_publish_candidate` — 功曹处理 |
+| review-queue/2026-06-15: Facebook (Cod&Pollock) | ✅ `approved_for_publish_candidate` — 功曹处理 |
+| review-queue/2026-06-16: Blogger (Salmon FAQ) | ✅ `approved_for_send` — 功曹处理 |
+| review-queue/2026-06-16: Facebook (Salmon FAQ) | ✅ `approved_for_send` — 功曹处理 |
+
+### 6. Content-Claim-Register 同步 ✅
+
+| 检查项 | 结果 |
+|--------|------|
+| content-claim-register.md | ✅ 三文鱼FAQ使用C0/C1已登记claim（salmon品类、规格沟通、单证按单确认），无新声明需注册 |
+| 公开措辞 | ✅ 全站谨慎口径（"confirmed per order" / "can assist"） |
+| 联系信息 | ✅ waruan825@agentmail.to / +86 13954508112 |
+
+### 7. Git 变更
+
+```text
+[main] publish: Frozen Salmon Sourcing FAQ blog (auto-approved: panguan + zhongkui + yushi → approved_for_publish_candidate)
+  ● blog/2026-06-16-salmon-sourcing-faq.html (新增，已批准 topic-009)
+  ● blog/index.html (更新，新增文章链接)
+  ● sitemap.xml (更新，新增URL条目)
+  ● llms.txt (更新，新增博客描述)
+  ● maintenance-log.md (更新，新增2026-06-17日检记录)
+```
+
+### 8. 遗留问题 / 待办
+
+| 优先级 | 事项 | 说明 |
+|--------|------|------|
+| 🟡 中 | guest-posts 审查 | 6篇客帖草稿均无审批记录 |
+| 🟡 中 | 社媒发布平台接入 | 已批准社媒内容（Blogger/Facebook/LinkedIn）等待功曹接入发布 |
+| 🟡 中 | 2026-06-05 LinkedIn客帖 | C4太平洋鲐鱼价格claim无法验证，需Ron确认软化措辞方向 |
+| 🟢 低 | basa.jpg / sardine.jpg 占位图替换 | 待 Ron 提供真实产品照片 |
+
+---
+
+*维护者：鲁班（工部·系统运维）*
+*日期：2026-06-17 08:50 CST*
+
+---
+
 ## 2026-06-14 周日 08:00（鲁班·日检）
 
 ### 执行摘要

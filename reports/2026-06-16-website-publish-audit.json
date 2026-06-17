@@ -1,0 +1,22 @@
+{
+  "schema_version": "website_publish_audit_v1",
+  "audited_at": "2026-06-16T08:26:13.861967+08:00",
+  "counts": {
+    "git_status_lines": 3,
+    "changed_paths": 3,
+    "sitemap_urls": 12,
+    "review_entries": 6,
+    "guest_post_markdown": 6
+  },
+  "finding_count": 1,
+  "findings": [
+    {
+      "area": "review_queue",
+      "file": "2026-06-15-public-content-review.json",
+      "findings": [
+        "schema_mismatch",
+        "do_not_store_raw_not_true"
+      ]
+    }
+  ]
+}

@@ -27,7 +27,14 @@
         "level": "C4",
         "evidence": "pending market source evidence — web search quota exhausted this round (2/2 used). Needs verified source URL + publication date + geographic scope. Without source, draft body should soften to 'market discussions indicate Pacific mackerel in this range' or remove specific figures.",
         "status": "needs_review",
-        "review_owner": "panguan"
+        "review_owner": "panguan",
+        "panguan_review_round3": {
+          "reviewed_at": "2026-06-16T10:34:26+08:00",
+          "c4_attempt": "web_search round 2/2 this cycle - searched for 'Pacific mackerel 300/500g WR IQF FOB China price 2026' and 'mackerel 300-500g FOB Qingdao Yantai price'. Results show: (1) Made-in-China listing for 200-300g IQF Pacific mackerel at $900-1,500/MT FOB — close size range but B2B listing, not independent market data. (2) Various product catalog pages with no specific 2026 price data for 300/500g size. No confirmed market report or trade statistics source found for the specific claim of $800-1,200/MT for 300/500g WR IQF FOB Qingdao/Yantai.",
+          "c4_outcome": "Cannot verify after 3 rounds (6 web searches across 3 rounds). No independent market report or trade data source found for this specific price range. Per SOP: no source → keep needs_review or soften draft body to 'market discussions indicate'. Recommend guest post draft softens the specific price figure.",
+          "escalation_needed": true,
+          "recommendation": "Draft body line 51: soften from exact '$800–$1,200 per metric ton' to 'market discussions indicate Pacific mackerel 300/500g WR IQF FOB prices in a range broadly above $800/MT' or remove the specific figure. Requires Ron/Zhongkui confirmation before editing draft body."
+        }
       },
       {
         "claim": "Dingdingmiao helps buyers source frozen seafood from China's supply chain with specifications and documents confirmed per order.",
@@ -38,7 +45,11 @@
       }
     ],
     "publish_gate": "draft_only",
-    "required_reviewers": ["panguan", "zhongkui", "ron"],
+    "required_reviewers": [
+      "panguan",
+      "zhongkui",
+      "ron"
+    ],
     "allowed_next_action": "review_only",
     "risk_flags": [
       "contains_certificate_discussion",
@@ -50,7 +61,11 @@
       "reviewed_at": "2026-06-13T17:00:00+08:00",
       "decision": "blocked",
       "reason": "Multiple unverified claims: C3 (HACCP/BRC certificates as screening criteria) needs_review by panguan; C2 (short weight/quality claim protocol) needs_review by zhongkui; C4 (Pacific mackerel price range USD 800-1200/MT) needs_review by panguan. Hard-stop risks: C3 certificate discussion without evidence, C4 price without source. Keep as draft_only.",
-      "blocking_gaps": ["C3: certificate evidence pending", "C2: Ron-approved claims policy pending", "C4: dated market/source evidence pending"]
+      "blocking_gaps": [
+        "C3: certificate evidence pending",
+        "C2: Ron-approved claims policy pending",
+        "C4: Pacific mackerel price range — 3 rounds of web search (6 searches) unable to verify independent source. Needs softening in draft body."
+      ]
     },
     "panguan_review": {
       "reviewed_at": "2026-06-14T00:00:00+08:00",
@@ -61,6 +76,13 @@
     "source_of_truth": "website-geo-publishing-governance.md + content-claim-register.md + draft file",
     "proposed_write_target": "seafood-site/review-queue/2026-06-05-public-content-review.json",
     "expiry_or_recheck_date": "2026-07-05",
-    "do_not_store_raw": true
+    "do_not_store_raw": true,
+    "panguan_review_round2": {
+      "reviewed_at": "2026-06-15T06:00:00+08:00",
+      "c4_attempt": "web_search round 2/2 - searched for Pacific mackerel 300/500g WR IQF FOB China pricing 2026. Results show product listings and B2B catalog pages but no specific USD 800-1200/MT market data. No confirmed source URL found.",
+      "c4_outcome": "Cannot verify. Per SOP: no source -> keep needs_review or soften draft body to market discussions indicate. Recommend draft body remove exact 00-1200/MT figure or soften to market discussions indicate Pacific mackerel in this range.",
+      "c2_note": "Still not in panguan scope. Claim protocol policy needs Ron confirmation before zhongkui can pass."
+    },
+    "panguan_review_round3_note": "C4 mackerel price claim: 3 rounds of panguan review (6 web searches total) could not find independent market source. Draft body should soften the specific price figure. Keeping needs_review. Softening the draft body requires Ron or Zhongkui confirmation."
   }
 ]
