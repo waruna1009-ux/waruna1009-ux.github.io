@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://waruna1009-ux.github.io/blog/mackerel-spec-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://waruna1009-ux.github.io/products.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
