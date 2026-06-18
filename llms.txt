@@ -11,6 +11,7 @@
 
 # === Blog ===
 /blog/: 水产行业博客 — 出口指南、价格趋势、采购建议、品质标准
+/blog/mackerel-spec-guide.html: Frozen Mackerel Sourcing Guide — 5 key spec fields for importers covering species, size grading, product forms, packing, and destination documentation
 /blog/2026-06-16-salmon-sourcing-faq.html: Frozen Salmon Sourcing FAQ — 进口商询价前应明确的6个关键字段：品种区别、产品形态、单重、脂肪含量、包装方式和单证要求
 /blog/2026-06-13-vietnam-scallop-supply-landscape.html: Vietnam Scallop Supply Landscape 2026 — 冷冻贝柱买家采购核对清单，越南市场信号，尺寸/含水/包装/单证检查
 /blog/2026-06-06-japanese-sea-scallop-meat-buying-guide.html: Japanese sea scallop meat buying guide — 夏贻贝柱采购核对清单，覆盖规格、含水/冰衣、包装、单证、目的港和询价字段
