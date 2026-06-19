@@ -543,3 +543,66 @@ Type: 纯技术修复，不涉及业务口径/claim（鲁班职责内可直接 c
 ```
 
 *待发布者：鲁班（在 Ron 的 Mac 上执行 push；本沙箱无 git 凭证）*
+
+## 2026-06-19 周五 08:26（鲁班·日检）
+
+### 执行摘要
+无新批准网站博客内容需发布。所有已审 website blog 草稿均已上线。
+技术修复：修复 salmon FAQ 博文 broken OG 图片引用（`frozen-salmon-fillet.jpg` → `salmon.jpg`）；
+补全 llms.txt 缺失的 4 篇博客文章（salmon-market-june2026, mackerel-market-may2026,
+global-seafood-trade-2026, how-to-choose-china-seafood-supplier）。Git 已提交推送。
+
+### 1. 发布审计脚本 ✅
+运行脚本：`website_publish_audit.py` → 5 个 findings
+- review-queue 4 文件（06-15/16/17/18）：schema_mismatch + do_not_store_raw_not_true（review JSON 格式警告，非阻断）
+- 06-17 review：approved_missing_required_reviewers（无 required_reviewers 字段，但 yushi_auto 已批准，非阻断）
+- publish_gate：`blog/drafts/mackerel-spec-guide.html` 提示 changed_public_files（实际该文章已发布到 `blog/mackerel-spec-guide.html`，draft 副本为旧版残留）
+
+**结论**：findings 均为 review 记录格式问题和已发布内容的 draft 残留，无阻断项。允许维护。
+
+### 2. 文件完整性检查 ✅
+| 检查项 | 状态 |
+|--------|------|
+| index.html | ✅ 305行，正常 |
+| products.html | ✅ 389行，正常 |
+| about.html | ✅ 187行，正常 |
+| contact.html | ✅ 231行，正常 |
+| blog/index.html | ✅ 116行，列出全部8篇文章 |
+| japanese-sea-scallop-meat.html | ✅ 结构完整，schema Product+FAQPage |
+| assets/css/style.css | ✅ 176行，响应式设计 |
+| assets/images/ | ✅ 19个有效 JPEG |
+| sitemap.xml | ✅ 14条，覆盖全部页面和博客 |
+| robots.txt | ✅ 允许 GPTBot/ClaudeBot/Google-Extended 等 |
+| llms.txt | ⚠️ 已修复：补全4篇缺失文章 |
+| HTML闭合标签 | ✅ 所有14个HTML文件结构完整 |
+
+### 3. 草稿与审核队列检查 ✅
+**已审核的 website blog 草稿（均已上线）：**
+- `blog/mackerel-spec-guide.html` — Mackerel Sourcing Guide（06-17 yushi_auto 批准，publish_gate=approved_for_publish）
+- `blog/2026-06-16-salmon-sourcing-faq.html` — Salmon Sourcing FAQ（06-16 yushi 批准，publish_gate=approved_for_publish_candidate）
+- `blog/2026-06-13-vietnam-scallop-supply-landscape.html` — Vietnam Scallop Supply（06-14 yushi 批准）
+- 更早的4篇文章均已上线
+
+**Blogger/Facebook 已批准草稿（06-18 approved_for_send，转功曹）：**
+- Blogger: Frozen Tuna Sourcing FAQ（C1 claims, zhongkui passed）
+- Facebook: 3 Types of Tuna Buyers（C1 claim, zhongkui passed）
+
+**未批准内容（不可发布）：**
+- 06-05 guest post（LinkedIn）：C4 价格数据经4轮判官审查仍无法验证，需软化措辞。保持 needs_review。
+
+### 4. Claim/事实审查核对 ✅
+所有已上线博客使用 C0/C1 口径，无 C3/C4 违规。blog 正文使用 softened 语言（"confirmed per order" / "can assist" / "per product, plant and order"）。
+content-claim-register.md 无需更新（无新 claim 引入）。
+
+### 5. 技术修复已执行
+| 文件 | 问题 | 修复 | 类型 |
+|------|------|------|------|
+| blog/2026-06-16-salmon-sourcing-faq.html | OG/Twitter 图引用 `frozen-salmon-fillet.jpg`（不存在） | → `assets/images/salmon.jpg` | 技术修复 |
+| llms.txt | 4篇博客缺失（salmon-market, mackerel-market, global-trade, supplier-guide） | 追加4条 AI crawler 索引条目 | 技术修复 |
+
+### 6. Git 提交
+```
+commit acfe29e
+chore: fix broken OG image (salmon FAQ) + complete llms.txt with 4 missing blog articles
+Auto-approved: technical maintenance fix only. Gate: luban technical fix.
+```
