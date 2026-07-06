@@ -43,7 +43,7 @@
           "telephone": "+86-13954508112",
           "contactType": "sales",
           "availableLanguage": ["Chinese", "English"],
-          "email": "waruan825@agentmail.to"
+          "email": "waruna825@outlook.com"
         },
         {
           "@type": "ContactPoint",
@@ -86,9 +86,9 @@
       <div class="contact-form">
         <h2 style="margin-bottom:1.5rem;color:var(--ocean-dark);">发送询价 Send an Inquiry</h2>
         <!-- 静态站(GitHub Pages)无后端，用 FormSubmit 把表单转成邮件，发到被系统监控的
-             AgentMail 收件箱(waruan825@agentmail.to) → reply_intake 自动建待办+派金札。
+             AgentMail 收件箱(waruna825@outlook.com) → reply_intake 自动建待办+派金札。
              无需 API key。首次提交时 FormSubmit 会向该收件箱发一封“激活确认”邮件，点一次链接即永久生效。 -->
-        <form id="inquiry-form" action="https://formsubmit.co/ajax/waruan825@agentmail.to" method="POST" onsubmit="handleSubmit(event)">
+        <form id="inquiry-form" action="https://formsubmit.co/ajax/waruna825@outlook.com" method="POST" onsubmit="handleSubmit(event)">
           <input type="hidden" name="_subject" value="🌐 官网新询价 Website Seafood Inquiry">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
@@ -143,7 +143,7 @@
           <div class="icon">📧</div>
           <div class="text">
             <strong>邮箱 Email</strong>
-            <a href="mailto:waruan825@agentmail.to">waruan825@agentmail.to</a>
+            <a href="mailto:waruna825@outlook.com">waruna825@outlook.com</a>
           </div>
         </div>
 
@@ -196,7 +196,7 @@
       <p style="margin-top:0.25rem;">中国山东省烟台市 | Yantai, Shandong, China</p>
     </div>
     <div>
-      <p><a href="mailto:waruan825@agentmail.to">📧 waruan825@agentmail.to</a></p>
+      <p><a href="mailto:waruna825@outlook.com">📧 waruna825@outlook.com</a></p>
       <p>💬 WhatsApp: +86 13954508112</p>
     </div>
     <div>
@@ -222,7 +222,7 @@ async function handleSubmit(e) {
     document.getElementById('form-success').style.display = 'block';
   } catch (err) {
     if (btn) { btn.disabled = false; btn.textContent = '发送询价 Send Inquiry →'; }
-    alert('提交失败，请直接邮件 waruan825@agentmail.to 或 WhatsApp 我们。\nSubmission failed — please email waruan825@agentmail.to or WhatsApp us directly.');
+    alert('提交失败，请直接邮件 waruna825@outlook.com 或 WhatsApp 我们。\nSubmission failed — please email waruna825@outlook.com or WhatsApp us directly.');
   }
   return false;
 }
