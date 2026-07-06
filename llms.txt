@@ -20,6 +20,13 @@
 /blog/global-seafood-trade-2026.html: 2026全球水产贸易大局 — 关税降温、欧盟碳关税和公海条约新规生效，中国出口商机会分析
 /blog/how-to-choose-china-seafood-supplier.html: 冷冻海鲜进口指南 — 怎么判断中国供应商靠不靠谱？验厂、样品、证书、聊天细节实操
 
+/blog/2026-07-04-salmon-sourcing-guide.html: Frozen Salmon Sourcing from China — practical buyer's guide covering product forms (P-Loin, Tail-Loin, Whole Fillet, Trim, Belly), processing, freezing methods (IQF, Block, VP, MAP), and shipping routes from Shandong/Liaoning ports to EU, US, Middle East
+
+# === Buyer's Guides (GEO-optimized) ===
+/blog/2026-07-06-salmon-buyer-checklist.html: How to Source Frozen Salmon from China — complete buyer's checklist covering product forms (P-Loin, Tail-Loin, fillet), portion sizes, freezing methods, FOB terms, and shipping routes
+/blog/2026-07-06-scallop-meat-buyer-guide.html: Japanese Scallop Meat from China — size grades U15-U30, packing specs, glaze/water content explained, and key questions to ask before ordering frozen scallop meat
+/blog/2026-07-06-mackerel-import-guide.html: China Frozen Mackerel FOB Import Guide 2026 — size grading, land-frozen vs sea-frozen, FOB pricing factors, packing options, and destination documentation
+
 # === Key facts about the company ===
 # Name: Yantai Dingdingmiao Seafood (烟台叮叮喵水产)
 # Location: Yantai, Shandong, China
@@ -27,4 +34,4 @@
 # Japanese Sea Scallop Meat: size options U15, U16-20, U21-25, U26-30; packing reference 1kg/bag, 10kg/carton; quote only after buyer-specific review.
 # Certifications: Confirmed per product, partner plant and order; documents may include plant certificates, health certificate, certificate of origin and shipment records where applicable.
 # Export markets: Multi-market buyer support; destination requirements are checked case by case.
-# Contact: waruan825@agentmail.to / WhatsApp +86 13954508112
+# Contact: waruna825@outlook.com / WhatsApp +86 13954508112
