@@ -93,19 +93,19 @@
 
 <nav class="navbar">
   <div class="container">
-    <a href="index.html" class="logo">🐟 <span>叮叮喵</span> Seafood</a>
+    <a href="index.html" class="logo">🐟 <span>Dingdingmiao</span> Seafood</a>
     <ul class="nav-links">
-      <li><a href="index.html">首页 Home</a></li>
-      <li><a href="products.html">产品 Products</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
       <li><a href="about.html">关于 About</a></li>
-      <li><a href="contact.html" class="active">联系 Contact</a></li>
-      <li><a href="blog/">博客 Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="blog/">Blog</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="breadcrumb container">
-  <a href="index.html">首页 Home</a> <span>/</span> 联系我们 Contact
+  <a href="index.html">Home</a> <span>/</span> 联系我们 Contact
 </div>
 
 <header class="page-header">
@@ -161,7 +161,7 @@
             <label for="message">您的需求 Your Message</label>
             <textarea id="message" name="message" placeholder="Tell us your requirements — product specs, destination port, target price...&#10;请描述您的需求——产品规格、目的港、目标价格..."></textarea>
           </div>
-          <button type="submit" class="btn-submit">发送询价 Send Inquiry →</button>
+          <button type="submit" class="btn-submit">Send Inquiry →</button>
         </form>
         <div id="form-success" style="display:none; text-align:center; padding:2rem; color:#27ae60; font-weight:bold;">
           ✅ 感谢您的询价！我们会尽快回复。Thank you! We'll get back to you as soon as possible.
@@ -214,7 +214,7 @@
           <p style="color:var(--gray-600);font-size:0.95rem;">
             <a href="products.html">查看产品目录 Product Catalog</a><br>
             <a href="about.html">了解我们 About Us</a><br>
-            <a href="blog/">行业博客 Blog</a>
+            <a href="blog/">行业Blog</a>
           </p>
         </div>
       </div>
@@ -233,8 +233,8 @@
       <p>💬 WhatsApp: +86 13954508112</p>
     </div>
     <div>
-      <p><a href="index.html">首页 Home</a> | <a href="products.html">产品 Products</a> | <a href="about.html">关于 About</a></p>
-      <p><a href="contact.html">联系 Contact</a> | <a href="blog/">博客 Blog</a></p>
+      <p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">关于 About</a></p>
+      <p><a href="contact.html">Contact</a> | <a href="blog/">Blog</a></p>
     </div>
   </div>
   <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--gray-500);">&copy; 2026 烟台叮叮喵水产 Yantai Dingdingmiao Seafood. All rights reserved.</p>
@@ -254,7 +254,7 @@ async function handleSubmit(e) {
     form.style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   } catch (err) {
-    if (btn) { btn.disabled = false; btn.textContent = '发送询价 Send Inquiry →'; }
+    if (btn) { btn.disabled = false; btn.textContent = 'Send Inquiry →'; }
     alert('提交失败，请直接邮件 waruna825@outlook.com 或 WhatsApp 我们。\nSubmission failed — please email waruna825@outlook.com or WhatsApp us directly.');
   }
   return false;
