@@ -30,6 +30,8 @@ The build copies an explicit public-file allowlist into ignored `dist/`. It gene
 
 ## Operating rules
 
+The owner delegated ongoing blog topics and publication on 2026-10-23. Follow [the blog editorial policy](scripts/blog-editorial.md): target one new buyer guide and one substantive old-guide improvement each week in the existing Monday operating run, with a performance review every four cycles. Preserve original publication dates and old URLs; record a new review date only after substantive work. The initial library now contains thirteen guides (two new, eleven revised), with buyer-question categories and inquiry paths.
+
 - Global buyers and all seafood categories; distinguish trade/sourcing services from manufacturing or inventory ownership.
 - Publish only supported facts. Do not invent stock, price, certification, capacity, delivery commitments, reviews, clients or search-volume claims.
 - Prioritize intent and measured results: sourcing-agent queries, product/species/form queries, specification and packing questions, then destination questions supported by current primary sources.

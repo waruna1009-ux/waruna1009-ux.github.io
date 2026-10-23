@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import hashlib, json, re, sys, xml.etree.ElementTree as ET
 from urllib.robotparser import RobotFileParser
+from datetime import date
 from site_config import CANONICAL_ORIGIN as BASE, canonical_url
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
@@ -13,12 +14,13 @@ class Page(HTMLParser):
     # while separating adjacent headings, paragraphs, and other block elements.
     block_tags={'address','article','aside','blockquote','br','dd','div','dl','dt','figcaption','figure','footer','h1','h2','h3','h4','h5','h6','header','hr','li','main','nav','ol','p','section','table','td','th','tr','ul'}
     def __init__(self):
-        super().__init__();self.links=[];self.ids=set();self.canon=[];self.description=[];self.h1=0;self.hidden=0;self.text=[];self.robots=[]
+        super().__init__();self.links=[];self.ids=set();self.canon=[];self.description=[];self.h1=0;self.hidden=0;self.text=[];self.robots=[];self.dates=[]
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if tag in ('head','script','style'):self.hidden+=1
         if not self.hidden and tag in self.block_tags:self.text.append(' ')
         if tag=='h1':self.h1+=1
+        if tag=='time' and a.get('datetime'):self.dates.append(a['datetime'])
         if a.get('id'):self.ids.add(a['id'])
         if tag=='link' and a.get('rel')=='canonical':self.canon.append(a.get('href'))
         if tag=='meta' and a.get('name')=='description':self.description.append(a.get('content',''))
@@ -57,7 +59,18 @@ for p in list(ROOT.glob('*.html'))+list((ROOT/'blog').glob('*.html')):
             for faq in obj['mainEntity']:
                 if norm(faq['name']) not in visible or norm(faq['acceptedAnswer']['text']) not in visible:
                     errors.append(f'{p.name}: FAQ schema not represented in visible text: '+faq['name'])
+        if obj.get('@type')=='BlogPosting':
+            if norm(obj.get('headline','')) not in visible:errors.append(f'{p.name}: article headline not visible')
+            if obj.get('url')!=canonical_url(p.relative_to(ROOT).as_posix()):errors.append(f'{p.name}: article URL mismatch')
+            for role in ['author','publisher']:
+                if obj.get(role,{}).get('@id')!=BASE+'/#organization':errors.append(f'{p.name}: article {role} not linked to company identity')
+            try:
+                published=date.fromisoformat(obj['datePublished']);modified=date.fromisoformat(obj['dateModified'])
+                if not published<=modified<=date.today():errors.append(f'{p.name}: invalid article date order')
+                if not {published.isoformat(),modified.isoformat()}.issubset(doc.dates):errors.append(f'{p.name}: article dates not displayed')
+            except (KeyError,ValueError):errors.append(f'{p.name}: invalid article dates')
     if types.count('Organization')!=1 or types.count('WebSite')!=1:errors.append(f'{p.name}: missing/duplicate company or website entity')
+    if p.parent.name=='blog' and p.name!='index.html' and types.count('BlogPosting')!=1:errors.append(f'{p.name}: missing/duplicate article metadata')
     if len(visible)<200:errors.append(f'{p.name}: insufficient readable HTML content')
 for p,doc in pages.items():
     for href in doc.links:
@@ -71,6 +84,9 @@ for p,doc in pages.items():
         if not target.is_file():errors.append(f'{p.name}: broken link '+href);continue
         if u.fragment and target.resolve() in pages and unquote(u.fragment) not in pages[target.resolve()].ids:errors.append(f'{p.name}: missing fragment '+href)
 canonical={x.canon[0] for x in pages.values() if x.canon}
+blog_index=pages[(ROOT/'blog/index.html').resolve()]
+for p in pages:
+    if p.parent.name=='blog' and p.name!='index.html' and p.name not in blog_index.links:errors.append(f'{p.name}: article missing from blog index')
 sitemap={x.text for x in ET.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 if canonical!=sitemap:errors.append('Sitemap differs from canonical page set')
 llms_urls=re.findall(r'\]\((https://[^)]+)\)',(ROOT/'llms.txt').read_text())
