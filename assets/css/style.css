@@ -28,6 +28,9 @@
   --shadow: 0 1px 2px rgba(10,37,64,.05), 0 8px 24px rgba(10,37,64,.07);
   --shadow-lg: 0 4px 12px rgba(10,37,64,.08), 0 20px 44px rgba(10,37,64,.12);
   --maxw: 1120px;
+  --gray-50: #F6FAFC;
+  --gray-500: #5B7285;
+  --gray-600: #465F73;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -315,4 +318,42 @@ footer .logo span { color: #8FD6E8; }
 @media (max-width: 480px) {
   .card-grid, .product-grid { grid-template-columns: 1fr; }
   .nav-links a { padding: 7px 10px; font-size: 14px; }
+}
+
+/* Buyer contact and sourcing details */
+.reading-width { max-width: 860px; }
+.table-scroll { overflow-x:auto; }
+.table-scroll table { min-width:560px; }
+.reading-width h2 { margin: 1.2rem 0 .8rem; }
+.reading-width p { margin: .8rem 0; }
+.contact-actions { display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin:24px 0; }
+.hero .contact-actions { justify-content:center; }
+.hero .answer-capsule { color:#EAF4F8; }
+.hero .contact-actions > a:not(.btn) { color:#D6F3FC; text-decoration:underline; }
+.btn-secondary { background:var(--navy); color:#fff; box-shadow:none; }
+.btn-secondary:hover { background:var(--brand); }
+.product-detail { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; }
+.product-detail img { width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:var(--radius); }
+.product-detail p { margin:.8rem 0; }
+.image-caption, .small-note { font-size:14px; color:var(--muted); }
+.buyer-contact { padding-top:32px; padding-bottom:32px; }
+.buyer-contact h2 { margin-bottom:12px; }
+.buyer-contact a, .contact-info a { overflow-wrap:anywhere; }
+.buyer-faq details { border-bottom:1px solid var(--line); padding:18px 0; }
+.buyer-faq summary { cursor:pointer; font-weight:600; color:var(--navy); }
+.buyer-faq details p { margin-top:12px; }
+.sourcing-steps { padding-left:24px; }
+.sourcing-steps li { padding:10px 0; }
+#form-error { padding:14px; margin:12px 0; border:1px solid #B84932; border-radius:8px; }
+button:disabled { opacity:.6; cursor:wait; }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline:3px solid var(--brand-2); outline-offset:4px; }
+@media (max-width:760px) {
+  .product-detail { grid-template-columns:1fr; }
+  .contact-form { padding:20px; }
+  .contact-actions .btn { max-width:100%; overflow-wrap:anywhere; font-size:15px; padding:12px 20px; }
+  th, td { padding:10px 8px; overflow-wrap:anywhere; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after { transition:none !important; }
 }

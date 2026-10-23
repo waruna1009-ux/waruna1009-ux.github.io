@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Yantai Dingdingmiao — Frozen Seafood Inquiries | Salmon Supplier Yantai</title>
-  <meta name="description" content="WhatsApp: +86 13954508112Contact Yantai Dingdingmiao for frozen seafood sourcing inquiries.">
-  <meta name="keywords" content="contact Yantai Dingdingmiao, seafood inquiry China, frozen seafood quote, salmon supplier Yantai, WhatsApp seafood supplier,,,">
-  <link rel="canonical" href="https://waruna1009-ux.github.io/contact.html"> href="https://waruna1009-ux.github.io/contact.html">
+  <meta name="description" content="Request a frozen seafood quotation from Yantai Dingdingmiao. WhatsApp +86 13954508112 or email waruna825@outlook.com with your product, quantity and destination.">
+  <meta name="keywords" content="contact Yantai Dingdingmiao, seafood inquiry China, frozen seafood quote, salmon supplier Yantai, WhatsApp seafood supplier,">
+  <link rel="canonical" href="https://waruna1009-ux.github.io/contact.html">
   <link rel="alternate" hreflang="x-default" href="https://waruna1009-ux.github.io/contact.html">
   <!-- Open Graph -->
   <meta property="og:title" content="Contact Yantai Dingdingmiao — Frozen Seafood Inquiries">
@@ -22,38 +22,7 @@
   <meta name="twitter:image" content="https://waruna1009-ux.github.io/assets/images/og-contact.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- FAQPage Schema -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do I request a quotation from Dingdingmiao Seafood?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Email waruna825@outlook.com or WhatsApp +86 13954508112 with: product name, species, size/grade, packing, quantity, destination port, and certification needs. We respond within 1-2 business days."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens after I submit an inquiry?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "1) We review your specifications. 2) We match with qualified partner plants. 3) We provide FOB quotation with product specs, packing details, and estimated shipping timeline. 4) If terms work, we proceed to sample/PI/contract."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer samples before bulk orders?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, samples can be arranged for serious buyers. Sample freight is typically at buyer's cost. Samples help confirm product specifications before committing to container orders."
-      }
-    }
-  ]
-}
-  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,21 +59,24 @@
   <!-- Microsoft Clarity — page view & heatmap analytics -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
+        if (c.location.hostname !== "waruna1009-ux.github.io") return;
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xqu1ib3adr");
   </script>
 
+<script src="assets/js/contact-events.js" defer></script>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="container">
-    <a href="index.html" class="logo">🐟 <span>Dingdingmiao</span> Seafood</a>
+    <a href="index.html" class="logo" translate="no">🐟 <span>Dingdingmiao</span> Seafood</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Products</a></li>
+      <li><a href="seafood-sourcing-agent-china.html">Sourcing</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="blog/">Blog</a></li>
@@ -117,7 +89,7 @@
 </div>
 
 <header class="page-header">
-  <h1>Get In Touch</h1>
+  <h1>Request a Seafood Quotation</h1>
   <p>Tell us product, specs, packing, quantity and destination — we will reply with practical next steps as soon as possible.</p>
 </header>
 
@@ -126,10 +98,8 @@
     <div class="contact-grid">
       <div class="contact-form">
         <h2 style="margin-bottom:1.5rem;color:var(--ocean-dark);">Send an Inquiry</h2>
-        <!-- GitHub Pages static site. FormSubmit converts form to email, sent to monitored
-             AgentMail inbox (waruna825@outlook.com) → reply_intake auto-creates todo + dispatches.
-             No API key needed. On first submit, FormSubmit sends an activation email to this inbox — click once, permanently active. -->
-        <form id="inquiry-form" action="https://formsubmit.co/ajax/waruna825@outlook.com" method="POST" onsubmit="handleSubmit(event)">
+        <!-- FormSubmit forwards accepted inquiries to the configured business mailbox. Service activation and mailbox receipt must be verified separately. -->
+        <form id="inquiry-form" data-clarity-mask="true" action="https://formsubmit.co/ajax/waruna825@outlook.com" method="POST" onsubmit="handleSubmit(event)">
           <input type="hidden" name="_subject" value="🌐 Website Seafood Inquiry">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
@@ -148,20 +118,10 @@
           </div>
           <div class="form-group">
             <label for="product">Product Interest *</label>
-            <select id="product" name="product" required>
-              <option value="">| Select a product |</option>
-              <option value="Salmon">Frozen Salmon</option>
-              <option value="Squid">Frozen Squid</option>
-              <option value="Cod">Frozen Cod</option>
-              <option value="Shrimp">Frozen Shrimp</option>
-              <option value="Tuna">Frozen Tuna</option>
-              <option value="Tilapia">Frozen Tilapia</option>
-              <option value="Basa">Frozen Basa</option>
-              <option value="Surimi">Frozen Surimi</option>
-              <option value="Other">Other / Multiple Products</option>
-            </select>
+            <input type="text" id="product" name="product" list="product-options" required maxlength="160" placeholder="Any seafood product — choose or type your requirement"><datalist id="product-options"><option value="Japanese Sea Scallop Meat"></option><option value="Frozen Salmon"></option><option value="Frozen Squid"></option><option value="Frozen Cod"></option><option value="Frozen Shrimp"></option><option value="Frozen Mackerel"></option><option value="Frozen Sardine"></option><option value="Frozen Tuna"></option><option value="Frozen Tilapia"></option><option value="Frozen Basa"></option><option value="Surimi"></option><option value="Other / Unlisted Seafood"></option></datalist><p class="small-note">Your product does not need to be in our catalog.</p>
           </div>
           <div class="form-group">
+            <label for="destination">Destination Country / Port *</label><input type="text" id="destination" name="destination" required placeholder="e.g. Ghana / Tema"><br><br>
             <label for="quantity">Estimated Quantity</label>
             <input type="text" id="quantity" name="quantity" placeholder="e.g. 1x40ft container / 20 MT">
           </div>
@@ -169,10 +129,11 @@
             <label for="message">Your Message</label>
             <textarea id="message" name="message" placeholder="Tell us your requirements — product specs, destination port, target price..."></textarea>
           </div>
+          <p id="form-error" role="alert" hidden>We could not confirm your inquiry. Please <a href="mailto:waruna825@outlook.com">email us</a> or use <a href="https://wa.me/8613954508112">WhatsApp</a>.</p>
           <button type="submit" class="btn-submit">Send Inquiry →</button>
         </form>
-        <div id="form-success" style="display:none; text-align:center; padding:2rem; color:#27ae60; font-weight:bold;">
-          ✅ Thank you! We'll get back to you as soon as possible.
+        <div id="form-success" role="status" aria-live="polite" style="display:none; text-align:center; padding:2rem; color:#27ae60; font-weight:bold;">
+          Your inquiry was accepted by the form service. For urgent requests, please also contact us by WhatsApp or email.
         </div>
       </div>
 
@@ -238,7 +199,7 @@
     </div>
     <div>
       <p><a href="mailto:waruna825@outlook.com">📧 waruna825@outlook.com</a></p>
-      <p>💬 WhatsApp: +86 13954508112</p>
+      <p><a data-contact="whatsapp" href="https://wa.me/8613954508112">WhatsApp: +86 13954508112</a></p>
     </div>
     <div>
       <p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About</a></p>
@@ -248,25 +209,6 @@
   <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--gray-500);">&copy; 2026 Yantai Dingdingmiao Seafood. All rights reserved.</p>
 </footer>
 
-<script>
-async function handleSubmit(e) {
-  e.preventDefault();
-  var form = document.getElementById('inquiry-form');
-  var btn = form.querySelector('.btn-submit');
-  if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
-  try {
-    var res = await fetch(form.action, {
-      method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }
-    });
-    if (!res.ok) throw new Error('send failed');
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  } catch (err) {
-    if (btn) { btn.disabled = false; btn.textContent = 'Send Inquiry →'; }
-    alert('Submission failed — please email waruna825@outlook.com or WhatsApp us directly.');
-  }
-  return false;
-}
-</script>
+<script src="assets/js/inquiry.js" defer></script>
 </body>
 </html>

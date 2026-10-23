@@ -1,5 +1,10 @@
 .DS_Store
 *.log
+/dist/
+__pycache__/
+*.pyc
+.env
+.env.*
 
 # internal pipeline files - never publish
 review-queue/
