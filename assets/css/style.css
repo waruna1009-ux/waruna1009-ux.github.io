@@ -357,3 +357,12 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline:3px solid
   html { scroll-behavior:auto; }
   *, *::before, *::after { transition:none !important; }
 }
+
+/* Company facts and buyer answers are visible without JavaScript. */
+.company-facts { margin: 1.5rem 0; }
+.company-facts dt { font-weight: 700; color: var(--ocean-dark, #12394a); margin-top: 1.1rem; }
+.company-facts dd { margin: .3rem 0 0; overflow-wrap: anywhere; }
+.buying-faq article { margin: 2rem 0; padding-top: 1rem; border-top: 1px solid #dce7eb; }
+.buying-faq h2 { font-size: 1.3rem; line-height: 1.4; margin-bottom: .65rem; }
+.content-review { font-size: .9rem; color: #52616b; }
+.site-reference { padding: 1rem 1.5rem 0; text-align: center; font-size: .9rem; }
