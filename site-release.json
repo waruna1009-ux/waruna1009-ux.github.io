@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "canonical_origin": "https://dingdingmiao-seafood.genialpike6.chatgpt.site",
-  "content_sha256": "c0b27a4aa94ef9d72bd6ee14a3fc641e62e1e743789eba50f1c25c2b5231c3b7",
+  "content_sha256": "62f80f6285ecb0910e2d3e7aff498dab8e53e812d5c9e9bab05fa3c5062dec40",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CNAME": "5a46ab800c257ed5c1f43a73460c8c4e613412c9a317ee2061777de4dd12a881",
@@ -39,9 +39,10 @@
     "blog/2026-07-12-frozen-tilapia-from-china-for-us-importers-a-practical-sour.html": "917d8b8d077c4f52afa3f4024bb1d6f2bf6fbb9bea3452605ecb9f0c7e1789ba",
     "blog/2026-07-13-frozen-sardine-china-buyer-guide.html": "ecf3bb6242b031119d51dcc76feb82afd8dfb7bf09c06ad2f5170bba705e6c3b",
     "blog/frozen-seafood-glaze-net-weight-quote-comparison.html": "7de585ac86976531ad150be4c4b7d7b9c02314b420750cb061e148e2fbf9f01d",
-    "blog/index.html": "e7a1346e42036a2f180fbb269a5bf1534f6f67e4ce54d7347ba6fc5da5bfcb91",
+    "blog/frozen-shrimp-count-size-packing-guide.html": "037b834e6e3c6e4eb304411b4b21db6d78f18cb7027fad9af43f1e6be353da75",
+    "blog/index.html": "c259b5270b20e7139bb13d9650ffd7adedeb0c8f75a01f8259c02e20ab63d32e",
     "blog/mackerel-spec-guide.html": "0e7209a5609926e051ad8ac63a2df9b10ba64e69c222a807e06ac6deb96b35dd",
-    "blog/seafood-rfq-template-importers.html": "517ee6aa3be91a4aacdeeac53a2ff52e2d508273223bd49fe9ff785a917e3137",
+    "blog/seafood-rfq-template-importers.html": "7c3d1a22b731366342d64ae5ec9afa3d51eeb416b70d086d90676ccbfc50b3e1",
     "contact.html": "1b26680e32670585f5180c1c6d864005ea234f3ab7d9c9cbecccd682e55947e9",
     "frozen-mackerel-supplier-china.html": "ca36645e03c3dddb4078e4a2c284dc712ed78e0039bba11f31e305ab5d998061",
     "frozen-salmon-supplier-china.html": "212a9fde6a040d8ee6525b2a21196ad7955586884a7cc68aa52656940607cb73",
@@ -49,13 +50,13 @@
     "frozen-squid-supplier-china.html": "cc7993859f3a87bf1a530441cb1d47353802c0779037466abe7e9c422629dfc0",
     "google9c62bfeefd95216e.html": "0e372155c415260d43e26c4ac556c0df60d90c587e078eb3d6d19dcf5caa02f9",
     "humans.txt": "22a550388a5eced0affa84527af7e524ca044b1853ec433a96a0e47d1ef8d0e2",
-    "index.html": "296a3e40d745a80e7f8f3d451b4c868de4887baa43526ad01c81084951f612cb",
+    "index.html": "b157c6ad7793bca37e30761c4055b42a1a63975b83c0a9d98f1339064fed5007",
     "japanese-sea-scallop-meat.html": "c7a80c206e639129661e3bac7f81d61cb4f535e7430bc64dd9d4bfc0ee4750ee",
-    "llms.txt": "c16252cb6a0e8244276f8338c4f2216199d93393276c4e18c87834e00020c7d4",
+    "llms.txt": "1d634802776b1ba5907c63c2df099fad4ac9c5e2737eb18c38e4b92505611831",
     "products.html": "9fbe4a5ffa730dd6b4f982eab315c2896d4fb90e16225c28a79200dc22a8d26b",
     "robots.txt": "29c64d417e98dc93ae73e53d31001cb1a8750f2c14a0dae7d829ddffe138a903",
     "seafood-buying-faq.html": "2997ddbf59087ed4596a0b44683306b3e774f4c833c2f0d6f2be5bc683eefa00",
     "seafood-sourcing-agent-china.html": "791bbd0f632f4cf26d3d9bc450d5575e5a4e8bfb844c5ee875d4fa8aa41d5533",
-    "sitemap.xml": "dcd29f38f747094625d3202ea02a521b0f791c2e149cc54ea99df4206bfd9238"
+    "sitemap.xml": "f0553296f15a79975c7d9c038473c47b751212a578ba9ca50ffe0034d240d0d9"
   }
 }
