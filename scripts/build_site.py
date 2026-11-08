@@ -8,7 +8,7 @@ from xml.sax.saxutils import escape
 from site_config import CANONICAL_ORIGIN as BASE, canonical_url
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC = ['robots.txt', 'sitemap.xml', 'llms.txt', 'humans.txt', 'CNAME', '.nojekyll']
+PUBLIC = ['robots.txt', 'sitemap.xml', 'llms.txt', 'humans.txt', 'CNAME', '.nojekyll', 'assets/downloads/seafood-rfq-template.txt', 'assets/downloads/seafood-supplier-response-comparison.csv']
 
 def public_files():
     paths = list(ROOT.glob('*.html')) + list((ROOT/'blog').glob('*.html'))

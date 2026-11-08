@@ -4,7 +4,7 @@ The owner delegated topics, direction, cadence, publication and continuing blog 
 
 ## Cadence and prioritization
 
-- Use the existing Monday 09:00 Asia/Shanghai operating heartbeat. Target one useful new English buyer guide and one substantive existing-guide improvement each week. Include both in the same release and owner email; do not create extra report or notification schedules.
+- Use the existing Wednesday 09:00 Asia/Shanghai operating heartbeat, as authorized on 2026-11-08. Target at most one useful new English buyer guide and one substantive existing-guide improvement per batch. Include both in the same release. Accumulate results for the 28-day owner email on 2026-12-06; the earlier Monday weekly-email arrangement is superseded.
 - The initial 2026-10-23 cleanup added two evergreen quotation guides and revised all eleven existing articles. There are thirteen articles, each with its own buyer question, original publication date and honest modification date.
 - Prioritize actual inquiry questions and available Search Console queries, then unmet buying questions supported by current public search observations. Query appearances are qualitative intent evidence, not monthly search volumes.
 - Cover all seafood categories and unlisted sourcing requests. Rotate specification/packing, quotation comparison, supplier and route review, and destination topics backed by current official sources. Do not repeatedly create near-duplicates for each country or keyword spelling.
@@ -29,6 +29,6 @@ The owner delegated topics, direction, cadence, publication and continuing blog 
 - Every guide should offer a relevant inquiry form link and the real email and WhatsApp contacts. These are calls to action, not proof of messages received. Never insert customer mail content or personal data into published examples.
 - Run python3 scripts/build_site.py, python3 scripts/check_site.py, node scripts/check_inquiry.mjs and appropriate desktop/mobile review. Use the Sites skill to package and publish, and push the same commit normally to GitHub main.
 - Verify live release manifests and the changed URLs on both hosts after deployment. Sites may append a Cloudflare detection script to HTML; identify that exact addition separately rather than hiding other differences. The GitHub .nojekyll marker is not served by Sites.
-- Record topic, query intent, evidence, changes, original/review dates, source commit, live URLs, deployment result and measurement gaps in the local editorial ledger and the weekly email.
+- Record topic, query intent, evidence, changes, original/review dates, source commit, live URLs, deployment result and measurement gaps in the local editorial ledger and the consolidated 28-day report.
 
 The local editorial ledger and upcoming candidate topics are in work/website-operations/blog-editorial-state.json in the owning Codex task, not in the public website. Read the latest user requests and operating handoffs before each run.

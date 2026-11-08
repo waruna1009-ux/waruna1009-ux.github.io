@@ -1,12 +1,14 @@
 {
   "schema_version": 1,
   "canonical_origin": "https://dingdingmiao-seafood.genialpike6.chatgpt.site",
-  "content_sha256": "62f80f6285ecb0910e2d3e7aff498dab8e53e812d5c9e9bab05fa3c5062dec40",
+  "content_sha256": "060a4f18cee91d394ac8f6b639fc3f670f9d90563de96be8dd5266a60b7e8a1e",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CNAME": "5a46ab800c257ed5c1f43a73460c8c4e613412c9a317ee2061777de4dd12a881",
     "about.html": "fd64398db67b95d781f91162e478d85156bff8f789a80b619076addd61f74d90",
     "assets/css/style.css": "7336357742b80dbe0a0cbe7a7e7c9393677d8b84aee0c00ab285aa7c4318650e",
+    "assets/downloads/seafood-rfq-template.txt": "8b39c5e5aaa3aed4e30c09f4d70f36a4aa3660e293a7031f2ebc5c504d4b0170",
+    "assets/downloads/seafood-supplier-response-comparison.csv": "d7cf08355ed43ca52427161ab250deb6693873f4478422e3bed225e1fcb2b695",
     "assets/images/about_island.jpg": "d6e0817d399e7b7f1dae7623d530ba3e3146118385ea370115c804f6b842cd9f",
     "assets/images/basa.jpg": "1a0e78e2b1f3b7ca5d914df95e21eef0140ec55b3849d6251b1ab4154c3d0235",
     "assets/images/cod.jpg": "0ac0eed3393e297351155c091917e2c95a5324142b772a19041eee7ceb7a7572",
@@ -40,9 +42,10 @@
     "blog/2026-07-13-frozen-sardine-china-buyer-guide.html": "ecf3bb6242b031119d51dcc76feb82afd8dfb7bf09c06ad2f5170bba705e6c3b",
     "blog/frozen-seafood-glaze-net-weight-quote-comparison.html": "7de585ac86976531ad150be4c4b7d7b9c02314b420750cb061e148e2fbf9f01d",
     "blog/frozen-shrimp-count-size-packing-guide.html": "037b834e6e3c6e4eb304411b4b21db6d78f18cb7027fad9af43f1e6be353da75",
-    "blog/index.html": "c259b5270b20e7139bb13d9650ffd7adedeb0c8f75a01f8259c02e20ab63d32e",
+    "blog/index.html": "0e6cb7cfd609e68ebbf58071c9d533e4ac9989cd5ffe724468a79c3722a05f6b",
     "blog/mackerel-spec-guide.html": "0e7209a5609926e051ad8ac63a2df9b10ba64e69c222a807e06ac6deb96b35dd",
-    "blog/seafood-rfq-template-importers.html": "7c3d1a22b731366342d64ae5ec9afa3d51eeb416b70d086d90676ccbfc50b3e1",
+    "blog/out-of-catalogue-seafood-sourcing.html": "9ab0eacd40b97444b140a9c6516a329de323474d353531f27208e0ae23fdbada",
+    "blog/seafood-rfq-template-importers.html": "1cd6d8895b4440ebe5e9d5ef9173f7c27d6c64ee40e0c13b660a8a718fa21006",
     "contact.html": "1b26680e32670585f5180c1c6d864005ea234f3ab7d9c9cbecccd682e55947e9",
     "frozen-mackerel-supplier-china.html": "ca36645e03c3dddb4078e4a2c284dc712ed78e0039bba11f31e305ab5d998061",
     "frozen-salmon-supplier-china.html": "212a9fde6a040d8ee6525b2a21196ad7955586884a7cc68aa52656940607cb73",
@@ -50,13 +53,13 @@
     "frozen-squid-supplier-china.html": "cc7993859f3a87bf1a530441cb1d47353802c0779037466abe7e9c422629dfc0",
     "google9c62bfeefd95216e.html": "0e372155c415260d43e26c4ac556c0df60d90c587e078eb3d6d19dcf5caa02f9",
     "humans.txt": "22a550388a5eced0affa84527af7e524ca044b1853ec433a96a0e47d1ef8d0e2",
-    "index.html": "b157c6ad7793bca37e30761c4055b42a1a63975b83c0a9d98f1339064fed5007",
+    "index.html": "e50dfae3f15b48e0128f4faf7c23d3e735247e2bab6772b829d466d2c4a304fd",
     "japanese-sea-scallop-meat.html": "c7a80c206e639129661e3bac7f81d61cb4f535e7430bc64dd9d4bfc0ee4750ee",
-    "llms.txt": "1d634802776b1ba5907c63c2df099fad4ac9c5e2737eb18c38e4b92505611831",
+    "llms.txt": "e029634e34c6fd80b65e1f18816828d12cc985bd7bfc70613a9c2335cdc423af",
     "products.html": "9fbe4a5ffa730dd6b4f982eab315c2896d4fb90e16225c28a79200dc22a8d26b",
     "robots.txt": "29c64d417e98dc93ae73e53d31001cb1a8750f2c14a0dae7d829ddffe138a903",
     "seafood-buying-faq.html": "2997ddbf59087ed4596a0b44683306b3e774f4c833c2f0d6f2be5bc683eefa00",
-    "seafood-sourcing-agent-china.html": "791bbd0f632f4cf26d3d9bc450d5575e5a4e8bfb844c5ee875d4fa8aa41d5533",
-    "sitemap.xml": "f0553296f15a79975c7d9c038473c47b751212a578ba9ca50ffe0034d240d0d9"
+    "seafood-sourcing-agent-china.html": "ea3f2b03cde84ebe8148c1aadfbe67d5257b03657c2744dfe54d1dee3dad7373",
+    "sitemap.xml": "537cc6a0007561e98b7389638bc3d85ed5a7d08cd4a9ece408c37afacc90c03a"
   }
 }

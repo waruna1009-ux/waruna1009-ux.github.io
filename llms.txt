@@ -36,4 +36,5 @@ This directory is supplementary; the linked visible pages are the primary conten
 - [Frozen Shrimp Buying Specifications: Count Units, Product Form and Packing | Dingdingmiao Seafood](https://dingdingmiao-seafood.genialpike6.chatgpt.site/blog/frozen-shrimp-count-size-packing-guide)
 - [Seafood Buyer Guides: Sourcing, Specifications and Quotations | Dingdingmiao Seafood](https://dingdingmiao-seafood.genialpike6.chatgpt.site/blog/)
 - [Frozen Mackerel Specifications: Five Fields for a Clear Inquiry | Dingdingmiao Seafood](https://dingdingmiao-seafood.genialpike6.chatgpt.site/blog/mackerel-spec-guide)
+- [Out-of-Catalogue Seafood Sourcing: From an Incomplete Request to a Comparable Offer | Dingdingmiao Seafood](https://dingdingmiao-seafood.genialpike6.chatgpt.site/blog/out-of-catalogue-seafood-sourcing)
 - [Seafood RFQ Template: Turn a Buying Requirement into Comparable Offers | Dingdingmiao Seafood](https://dingdingmiao-seafood.genialpike6.chatgpt.site/blog/seafood-rfq-template-importers)
