@@ -2,7 +2,7 @@
 
 Yantai Dingdingmiao is a trading and sourcing company for global seafood buyers. The catalog is a set of examples; unlisted products can be submitted for supplier search and quotation coordination. Availability, certifications, origin, service scope and any commission are agreed per engagement.
 
-- Canonical public website: https://dingdingmiao-seafood.genialpike6.chatgpt.site/
+- Canonical public website: https://dingdingmiao-seafood.waruna1009.chatgpt.site/
 - Existing synchronized public mirror: https://waruna1009-ux.github.io/
 - Canonical source: `waruna1009-ux/waruna1009-ux.github.io`, branch `main`.
 - Codex Sites project: see `.openai/hosting.json`. Reuse that project; never create a replacement to update this site.

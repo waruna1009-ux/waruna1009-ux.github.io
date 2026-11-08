@@ -1,5 +1,5 @@
 """Shared publication identity; private operating files are never public assets."""
-CANONICAL_ORIGIN = 'https://dingdingmiao-seafood.genialpike6.chatgpt.site'
+CANONICAL_ORIGIN = 'https://dingdingmiao-seafood.waruna1009.chatgpt.site'
 MIRROR_ORIGIN = 'https://waruna1009-ux.github.io'
 
 def canonical_url(relative_path):
