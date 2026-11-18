@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "canonical_origin": "https://dingdingmiao-seafood.waruna1009.chatgpt.site",
-  "content_sha256": "619e39bf437788d96d5700b0cbd56120c7a3311193c138370f825018e16d6a4b",
+  "content_sha256": "a7322a6a83fbd551f17489115937da8f3002312e54a9dc0f20e4ac4af98444eb",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CNAME": "5a46ab800c257ed5c1f43a73460c8c4e613412c9a317ee2061777de4dd12a881",
@@ -46,7 +46,7 @@
     "blog/mackerel-spec-guide.html": "7b6119543330b491ce387fa683d3cb287431569a23fe11c70a29b5136b575aac",
     "blog/mixed-seafood-orders-moq-packing-shipment.html": "9b25609125b00f7c39d3a4115e65d33c4b8e58cafa0ce0f392c5c85adeb2b4b8",
     "blog/out-of-catalogue-seafood-sourcing.html": "e767c620a643153db5a2165d6ea998f5f67c112b1e120f6d96918456adbb1df5",
-    "blog/seafood-rfq-template-importers.html": "5df14a5beb59a14bb52fd244c091c137bee487daf7544222b0ff299e2f899f0c",
+    "blog/seafood-rfq-template-importers.html": "c575d3f5bd154e8e608528acaa230a32df1fadc835cf85f7e772407b245894fb",
     "contact.html": "54d4ff40375ebd6c7f8fcf505e69d8d71f22b9364568370eb295ade4cc850aaa",
     "frozen-mackerel-supplier-china.html": "ab11379b4ad4050baa41cb2853072efb6d72ecb5b77a1b4be1623f9c86e39385",
     "frozen-salmon-supplier-china.html": "0996e0039cf51c508d23f880fcbd226b8233893b2de62c6338ef6cbe38ad23cd",
@@ -57,10 +57,10 @@
     "index.html": "7be30df2ebb82c932e1922fb3809b0a23bb07b1155fdd8c21bc7c042bb6b2135",
     "japanese-sea-scallop-meat.html": "2ca4fa1ee6329bab1ea36c5c91efaa2f2b7c51254dccdeb1655a28df4069b277",
     "llms.txt": "d086cfecd07ea15453d5623628edbaf29938231a5820133bd0d7649e62a2d692",
-    "products.html": "6e18db7a3fc7952174677eaae726beb6edbfa900f030b5006cac479ad4bc343f",
+    "products.html": "a289b57d140e944a31c8bf54cb57d8280d3dddc6da1926c45671cbca53f19a8c",
     "robots.txt": "87d89eb79eff8bf48a7046fb5667407a1638f2ef529d39064400b783847a230a",
     "seafood-buying-faq.html": "a5985b7ea1ee31daa74ee4d5d36e87794a0b530ed8cbab6c3d6da942335d099d",
-    "seafood-sourcing-agent-china.html": "994a4195eea344ddb369448a35cb20c3532cd2fade24adcfcf8c0daef76bd5e1",
-    "sitemap.xml": "247e9356df27310ff2ed5abf3324fb44ee7eb02cd94a4cbdf9e1feb0f834cda6"
+    "seafood-sourcing-agent-china.html": "b8b94517c5e6ea75a9556e8089b0ed2819d68ba6406818c60430581499ab75be",
+    "sitemap.xml": "da2eb10c9fe04eedee4b34949fc7fce53c88c3fcd2554007b11eee9d1c0b25f4"
   }
 }
